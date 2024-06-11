@@ -121,19 +121,6 @@ body {
   justify-content: space-between;
 }
 
-.check-box > input {
-  margin-right: 5px;
-}
-
-.check-box > label {
-  margin-right: 15px;
-  color: #93bfcf;
-}
-
-.check-box > a {
-  color: #93bfcf;
-}
-
 .button {
   display: flex;
   flex-direction: column;
@@ -147,13 +134,6 @@ body {
 }
 
 .btn-create {
-  margin-top: 0.5rem;
-  background-color: #bdcdd6;
-  color: #6096b4;
-  font-weight: bold;
-}
-
-.btn-login {
   background-color: #6096b4;
   font-weight: bold;
   color: white;
@@ -179,8 +159,8 @@ body {
   }
 
   .login-box {
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: 1.1rem auto;
+    padding: rem;
   }
 
   .details {
@@ -191,18 +171,28 @@ body {
   .detail-box {
     display: flex;
     flex-direction: column;
-    margin-left: 1.5rem;
+    margin: 10 1.5rem 0 1.5rem;
+  }
+
+  .greeting-msg > h1 {
+    margin-top: -6rem;
+    font-size: 4rem;
+  }
+
+  .greeting-msg > h2 {
+    font-size: 2.5rem;
   }
 
   .details > img {
     background-color: #d9d9d9;
     width: 100%;
-    height:600px;
+    height: 550px;
   }
 
   .form {
     width: 100%;
     font-size: 15px;
+    margin: -12rem 0 -5rem 0;
   }
 
   .email-box,
@@ -223,7 +213,7 @@ body {
   }
 
   .btn-create {
-    margin: 0rem 0rem 0rem 1rem;
+    margin: 1.5rem 0rem 0rem 0rem;
   }
 
   .check-box {
@@ -238,5 +228,7 @@ body {
     width: 10%;
   }
 
-
+  .greeting-msg {
+    width: 100%;
+  }
 }
