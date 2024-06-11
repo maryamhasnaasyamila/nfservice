@@ -9,38 +9,43 @@
   <body>
     <div class="container">
       <div class="form-box">
-        <form action="" method="post">
+        <form class="form" action="" method="post">
           <div class="head-form">
-            <h2>Form Pemesanan</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Perspiciatis fugit dolor voluptatem iste repellat asperiores,
-              omnis suscipit sint cupiditate odio, exercitationem soluta
-              blanditiis, recusandae doloribus inventore ad repellendus numquam?
-              Cumque!
-            </p>
+            <h1>Form Pemesanan Jasa Layanan Service Otomotif</h1>
+            <div class="deskripsi">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perspiciatis fugit dolor voluptatem iste repellat asperiores,
+                omnis suscipit sint cupiditate odio, exercitationem soluta
+                blanditiis, recusandae doloribus inventore ad repellendus
+                numquam? Cumque!
+              </p>
+            </div>
           </div>
+          <hr />
           <div class="form-section">
             <div class="form-group">
               <h2>Data Diri</h2>
               <label for="nama">Nama Anda</label> <br />
-              <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                placeholder="Nama Depan"
-              />
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                placeholder="Nama Belakang"
-              />
+              <div class="users-name">
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Nama Depan"
+                />
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Nama Belakang"
+                />
+              </div>
             </div>
             <div class="form-group">
               <label for="alamat">Alamat</label> <br />
               <input
-                type="textare"
+                type="textarea"
                 id="alamat"
                 name="alamat"
                 placeholder="Tuliskan alamat lengkap Anda saat ini."
@@ -48,56 +53,97 @@
             </div>
             <div class="form-group">
               <label for="notelp">Nomor HP/WA</label> <br />
-              <input
-                type="number"
-                id="notelp"
-                name="notelp"
-                placeholder="Masukkan No HP/WA Anda agar jasa layanan service dapat dengan mudah menghubungi Anda!"
-              />
+              <input type="number" id="notelp" name="notelp" placeholder="08xx-xxxx-xxxx" />
+              <p>
+                Masukkan No HP/WA Anda agar jasa layanan service dapat dengan
+                mudah menghubungi Anda!
+              </p>
             </div>
           </div>
+          <hr />
           <div class="form-section">
-            <div class="form-group">
-              <h2>Data Pemesanan</h2>
-              <label for="merk">Merk Kendaraan Anda</label> <br />
-              <input
-                type="text"
-                id=""
-                name="merk"
-                placeholder="Ex: Honda Vario 125"
-              />
-            </div>
-            <div class="form-group">
-              <label for="tanggal">Tanggal Service</label> <br />
-              <input type="date" id="" name="tanggal" />
-            </div>
-            <div class="form-group">
-              <label for="waktu">Waktu Service</label> <br />
-              <input type="time" id="waktu" name="waktu" />
-            </div>
-            <div class="form-group">
-              <label for="opsiLayanan">Opsi Layanan Service</label> <br />
-              <div class="opsi-layanan">
-                <select name="" id="">
-                  <option value="Silakan Pilih Opsi Layanan" disabled selected>
-                    Silakan Pilih Opsi Layanan
-                  </option>
-                  <option value="Call Service">Call Service</option>
-                  <option value="Self Service">Self Service</option>
-                </select>
-                <div class="note-opsi">
-                  <p>Note:</p>
-                  <p>
-                    Call Service: Layanan service dengan mendatangkan teknisi ke
-                    tempat Anda berada.
-                  </p>
-                  <p>
-                    Self Service: Layanan service langsung ke tempat service
-                    yang Anda pilih.
-                  </p>
+            <h2>Data Pemesanan</h2>
+            <div class="form-flex">
+              <div class="form-sub-section">
+                <div class="form-group">
+                  <label for="merk">Merk Kendaraan Anda</label> <br />
+                  <input
+                    type="text"
+                    id="merk"
+                    name="merk"
+                    placeholder="Ex: Honda Vario 125"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tanggal">Tanggal Service</label> <br />
+                  <input type="date" id="tanggal" name="tanggal" />
+                </div>
+                <div class="form-group">
+                  <label for="waktu">Waktu Service</label> <br />
+                  <input type="time" id="waktu" name="waktu" />
+                </div>
+                <div class="form-group">
+                  <label for="opsiLayanan">Opsi Layanan Service</label> <br />
+                  <div class="opsi-layanan">
+                    <select name="opsi" id="opsi">
+                      <option
+                        value="Silakan Pilih Opsi Layanan"
+                        disabled
+                        selected
+                      >
+                        Silakan Pilih Opsi Layanan
+                      </option>
+                      <option value="Call Service">Call Service</option>
+                      <option value="Self Service">Self Service</option>
+                    </select>
+                    <div class="note-opsi">
+                      <p>Note:</p>
+                      <p>
+                        * Call Service: Layanan service dengan mendatangkan
+                        teknisi ke tempat Anda berada.
+                      </p>
+                      <p>
+                        ** Self Service: Layanan service langsung ke tempat
+                        service yang Anda pilih.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-sub-section2">
+                <div class="form-group">
+                  <label for="service-store">Nama Tempat Service</label> <br />
+                  <input
+                    type="text"
+                    id="service-store"
+                    name="service-store"
+                    placeholder="Data ditarik dari halaman sebelumnya"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="layananService">Layanan Service</label> <br />
+                  <input
+                    type="text"
+                    id="layananService"
+                    name="layananService"
+                    placeholder="Data ditarik dari halaman sebelumnya"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="kategori">Kategori Service</label> <br />
+                  <select name="kategori" id="kategori">
+                    <option value="Otomotif">Data ditarik dari database</option>
+                    <option value="Elektronik" disabled sleected>
+                      Data ditarik dari database
+                    </option>
+                  </select>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="button">
+            <button class="btn-book">Book Now</button>
+            <button class="btn-cancel">Cancel</button>
           </div>
         </form>
       </div>
