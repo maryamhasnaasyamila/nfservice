@@ -3,76 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Elektronik</title>
+    <title>Service-Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <img src="/home/assets/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/home/assets/logo.png" alt="Logo">
+                <span></span>
+            </div>
+            <div class="right-nav">
+                <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
-            </nav>
-            <div class="auth-buttons">
-                <button class="login"><a href="/home/login/index.html">Login</a></button>
-                <button class="register"><a href="/home/register/index.html">Register</a></button>
+                <div class="search-container">
+                    <input type="text" placeholder="Search in site">
+                    <button type="submit"></button>
+                </div>
+                <div class="profile-icon">
+                  <a href="/home/login/index.html"><img src="/home/assets/icon.jpg" alt="Profile"></a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <section class="banner">
-            <img src="/home/assets/7.jpg" alt="Service Banner">
-        </section>
-        <section class="content">
+        <section class="title-section">
             <h1>SERVICE ELEKTRONIK</h1>
-            <div class="filter">
-                <div class="category">
-                    <label for="category">Kategori Elektronik</label>
-                    <select id="category">
-                        <option value="laptop">Laptop</option>
-                        <option value="handphone">Handphone</option>
-                    </select>
-                </div>
-                <div class="price-range">
-                    <label for="price">Batas Harga</label>
-                    <input type="number" id="min-price" placeholder="Min">
-                    <input type="number" id="max-price" placeholder="Max">
-                </div>
-            </div>
-            <div class="services">
-                <div class="service-item">
-                    <img src="/home/assets/6.jpg" alt="Service Laptop">
-                    <h2>Service Laptop</h2>
-                    <p>Rp. 150.000,00</p>
-                    <button class="details">Details</button>
-                </div>
-                <div class="service-item">
-                    <img src="/home/assets/6.jpg" alt="Service Laptop">
-                    <h2>Service Laptop</h2>
-                    <p>Rp. 150.000,00</p>
-                    <button class="details">Details</button>
-                </div>
-                <div class="service-item">
-                    <img src="/home/assets/6.jpg" alt="Service Laptop">
-                    <h2>Service Laptop</h2>
-                    <p>Rp. 150.000,00</p>
-                    <button class="details">Details</button>
-                </div>
-                <div class="service-item">
-                    <img src="/home/assets/6.jpg" alt="Service Laptop">
-                    <h2>Service Laptop</h2>
-                    <p>Rp. 150.000,00</p>
-                    <button class="details">Details</button>
-                </div>
+        </section>
+        <section class="carousel-section">
+            <div class="image-container">
+                <img src="/home/assets/5.jpg" alt="Motorcycle Service">
             </div>
         </section>
     </main>
+    <div class="filter-container">
+        <div class="filter-section">
+            <h2>Kategori Elektronik</h2>
+            <div class="filter-buttons">
+                <button class="filter-button">Handphone</button>
+                <button class="filter-button">Laptop</button>
+            </div>
+        </div>
+        <div class="filter-section">
+            <h2>Batas Harga</h2>
+            <div class="price-range">
+                <input type="number" placeholder="MIN" class="price-input">
+                <span>-</span>
+                <input type="number" placeholder="MAX" class="price-input">
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="/home/assets/7.jpg" alt="Service Image">
+            </div>
+            <div class="card-content">
+                <h3>Service Laptop</h3>
+                <p>Jl. Bahagia selamanya Depok 2 Tengah</p>
+                <p class="price">Rp. 150.000,00</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn profile-btn">View Profile</button>
+                <button class="btn detail-btn">View Detail</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="/home/assets/7.jpg" alt="Service Image">
+            </div>
+            <div class="card-content">
+                <h3>Service Laptop</h3>
+                <p>Jl. Bahagia selamanya Depok 2 Tengah</p>
+                <p class="price">Rp. 150.000,00</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn profile-btn">View Profile</button>
+                <button class="btn detail-btn">View Detail</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="/home/assets/7.jpg" alt="Service Image">
+            </div>
+            <div class="card-content">
+                <h3>Service Laptop</h3>
+                <p>Jl. Bahagia selamanya Depok 2 Tengah</p>
+                <p class="price">Rp. 150.000,00</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn profile-btn">View Profile</button>
+                <button class="btn detail-btn">View Detail</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="/home/assets/7.jpg" alt="Service Image">
+            </div>
+            <div class="card-content">
+                <h3>Service Laptop</h3>
+                <p>Jl. Bahagia selamanya Depok 2 Tengah</p>
+                <p class="price">Rp. 150.000,00</p>
+            </div>
+            <div class="card-actions">
+                <button class="btn profile-btn">View Profile</button>
+                <button class="btn detail-btn">View Detail</button>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>&copy; 2024 Informasi Service Lokal NF Service. All Rights Reserved.</p>
+        <p>2024 Informasi Service Lokal NF Service.<br>All Rights Reserved.</p>
     </footer>
 </body>
 </html>
