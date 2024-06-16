@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  width:max-content;
+}
+
+
+
+.head-box {
+    background-color: #6096B4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  color: black;
+  list-style: none;
+  margin-right: 1rem ;
+}
