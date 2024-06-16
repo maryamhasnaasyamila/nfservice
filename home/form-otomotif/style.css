@@ -1,3 +1,10 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   background-color: #fff;
@@ -6,15 +13,13 @@ body {
 .container {
   width: 100%;
   margin: 2rem auto;
+  padding: 0 1rem; /* Add padding to the container */
+  max-width: 1200px; /* Limit maximum width for larger screens */
 }
 
 hr {
   margin: 2rem -3rem 2rem -3rem;
 }
-
-/* .form {
-    width: 80%;
-} */
 
 .form-box {
   margin: 3rem auto;
@@ -23,104 +28,68 @@ hr {
   padding: 3rem;
   color: #6096b4;
   border-radius: 10px;
-  width: 70%;
+  width: 100%; /* Adjust width to full width */
+  max-width: 800px; /* Limit maximum width */
 }
 
 .form-group {
   margin-bottom: 1.5rem;
 }
 
-select {
-  margin: 0.5rem 0 0 0;
-  width: 65%;
-  height: 2rem;
-  border-radius: 5px;
-  border-color: #6096b4;
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: 100%;
+  height: 2.5rem; /* Adjust height for consistency */
   padding: 0.5rem;
-}
-
-.form-group > input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Adjust font size */
   margin-top: 0.5rem;
-  width: 70%;
-  height: 1rem;
-  border-color: #6096b4;
-  border-radius: 5px;
-  padding: 0.5rem;
 }
 
-.form-group > #tanggal,
-.form-group > #waktu {
-  width: 30%;
-}
-
-.form-group > #merk {
-  width: 60%;
-}
-
-.form-group > #notelp {
-  width: 55%;
+textarea {
+  height: 6rem; /* Increase height for textarea */
 }
 
 .form-group > p {
   font-size: 12px;
-  width: 55%;
+  width: 100%;
   text-align: justify;
-}
-
-.form-group > #layananService,
-.form-group > #store-service,
-.form-group > #kategori {
-  width: 80%;
-}
-
-.users-name > input {
-  margin-top: 0.5rem;
-  width: 40%;
-  height: 1rem;
-  border-color: #6096b4;
-  border-radius: 5px;
-  padding: 0.5rem;
+  margin-top: 0.5rem; /* Adjust margin */
 }
 
 .users-name {
   display: flex;
+  flex-wrap: wrap; /* Ensure flex items wrap */
 }
 
-.users-name > #firstName {
+.users-name > input {
+  flex: 1 1 40%; /* Allow input fields to grow and shrink */
+  height: 2.5rem;
+  margin-top: 0.5rem;
   margin-right: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .deskripsi {
-  width: 95%;
-  text-align: justify;
-}
-
-/* .form-group > select > option {
-  margin-top: 0.5rem;
   width: 100%;
-  height: 1.5rem;
-  border-color: #6096b4;
-  border-radius: 5px;
-} */
-
-.form-group > #alamat {
-  margin-top: 0.5rem;
-  width: 80%;
-  height: 5rem;
-  border-color: #6096b4;
-  border-radius: 5px;
+  text-align: justify;
 }
 
 .note-opsi {
   font-size: 12px;
-  width: 60%;
+  width: 100%;
   text-align: justify;
   padding: 0.5rem;
-}
-
-.form-flex {
-  display: flex;
-  flex-direction: column;
+  margin-top: 0.5rem;
 }
 
 .button {
@@ -129,94 +98,209 @@ select {
   margin: 1rem 0 2.5rem 0;
 }
 
+.btn-book,
+.btn-cancel {
+  min-width: 8rem; /* Ensure buttons have minimum width */
+  height: 3rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
 .btn-book {
   background-color: #6096b4;
-  color: #eee9da;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  padding: 0.5rem;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  height: 2.5rem;
-  width: 6rem;
+  color: #fff;
+  border: 1px solid #6096b4;
 }
 
 .btn-cancel {
   background-color: #fff;
   color: #6096b4;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  padding: 0.5rem;
-  font-weight: bold;
-  margin-left: 0.5rem;
-  height: 2.5rem;
-  width: 5rem;
+  border: 1px solid #6096b4;
 }
 
 @media (min-width: 768px) {
   .form-flex {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Ensure flex items wrap */
   }
 
   .form-sub-section2 {
-    margin-left: -2rem;
-    width: 70%;
-  }
-}
-
-@media (min-width: 992px) {
-  .form-flex {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .form-sub-section2 {
-    margin-left: 5rem;
-    width: 50%;
+    flex: 1 1 70%; /* Adjust width of sub-section */
+    margin-left: 0; /* Remove left margin */
   }
 
   .form-group > #tanggal,
   .form-group > #waktu {
-    width: 55%;
+    flex: 1 1 45%; /* Adjust width of date and time inputs */
   }
 
   .form-group > #merk {
-    width: 80%;
+    flex: 1 1 80%; /* Adjust width of brand input */
   }
 
   .form-group > #notelp {
-    width: 70%;
-  }
-
-  .select {
-    width: 60%;
+    flex: 1 1 70%; /* Adjust width of phone number input */
   }
 
   .form-group > #layananService,
   .form-group > #store-service,
   .form-group > #kategori {
-    width: 70%;
+    flex: 1 1 70%; /* Adjust width of select inputs */
   }
 
-  .form {
-    padding: 2rem;
+  .form-group > #alamat {
+    flex: 1 1 100%; /* Adjust width of address textarea */
+    height: 8rem; /* Adjust height for larger screens */
+    width : 100%;
   }
 
-  h1, h2 {
-    font-size: 30px;
+  .btn-book,
+  .btn-cancel {
+    min-width: 10rem; /* Adjust button minimum width */
+  }
+}
+
+@media (min-width: 992px) {
+  .form-flex {
+    flex-wrap: nowrap; /* Ensure flex items do not wrap */
   }
 
-  .form-section {
-    padding: 0.5rem;
+  .form-sub-section2 {
+    flex: 1 1 50%; /* Adjust width of sub-section */
+    margin-left: 5rem; /* Adjust left margin */
   }
 
-  .button {
-    margin: 0;
+  .form-group > #tanggal,
+  .form-group > #waktu {
+    flex: 1 1 40%; /* Adjust width of date and time inputs */
   }
 
-  .btn-book, .btn-cancel {
-    width: 10rem;
-    height: 3rem;
+  .form-group > #merk {
+    flex: 1 1 80%; /* Adjust width of brand input */
   }
+
+  .form-group > #notelp {
+    flex: 1 1 70%; /* Adjust width of phone number input */
+  }
+
+  .form-group > #layananService,
+  .form-group > #store-service,
+  .form-group > #kategori {
+    flex: 1 1 70%; /* Adjust width of select inputs */
+  }
+
+  .form-group > #alamat {
+    height: 10rem; /* Adjust height for larger screens */
+  }
+
+  .btn-book,
+  .btn-cancel {
+    min-width: 12rem; /* Adjust button minimum width */
+  }
+}
+
+.modal-confirm {
+  color: #434e65;
+  width: 525px;
+}
+
+.modal-confirm .modal-content {
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-confirm .modal-header {
+  background: #fff;
+  border-bottom: none;
+  position: relative;
+  text-align: center;
+  margin: -20px -20px 0;
+  border-radius: 5px 5px 0 0;
+  padding: 35px;
+}
+
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.modal-confirm .form-control,
+.modal-confirm .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+
+.modal-confirm .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  text-shadow: none;
+  opacity: 0.5;
+}
+
+.modal-confirm .close:hover {
+  opacity: 0.8;
+}
+
+.modal-confirm .icon-box {
+  color: #fff;
+  background-color: #47c9a2;
+  width: 95px;
+  height: 95px;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 9;
+  border: 5px solid #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.modal-confirm .icon-box i {
+  font-size: 64px;
+  margin: -4px 0 0 -4px;
+}
+
+.modal-confirm.modal-dialog {
+  margin-top: 80px;
+}
+
+.modal-confirm .btn,
+.modal-confirm .btn:active {
+  color: #fff;
+  border-radius: 4px;
+  background: #47c9a2 !important;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 6px 20px;
+  border: none;
+}
+
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+  background: #256a55 !important;
+  outline: none;
+}
+
+.modal-confirm .btn span {
+  margin: 1px 3px 0;
+  float: left;
+}
+
+.modal-confirm .btn i {
+  margin-left: 1px;
+  font-size: 20px;
+  float: right;
+}
+
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
 }
