@@ -62,7 +62,7 @@ nav ul li a {
 
 .banner img {
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .content {
