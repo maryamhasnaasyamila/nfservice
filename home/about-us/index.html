@@ -15,7 +15,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  
   <body>
     <div class="container">
       <div class="about-box">
@@ -24,56 +29,35 @@
             <div class="logo">
               <img src="" alt="logo" />
             </div>
-            <div class="navbar">
+            <div class="navbar stellarnav d-flex justify-content-end right">
               <nav>
-                <ul class="navbar">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">About</a></li>
+                <ul class="menu-list navbar">
+                  <li>
+                    <a href="#" class="item-anchor active" data-effect="Home"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="item-anchor" data-effect="Services"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="item-anchor" data-effect="About"
+                      >About</a
+                    >
+                  </li>
                 </ul>
               </nav>
               <div class="search">
                 <form id="searchForm">
-                  <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search for movies..."
-                  />
-                  <button type="submit">
-                    <!-- <i class="bi bi-search"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-search"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                      />
-                    </svg>
-                  </button>
+                  <input type="text" placeholder="Search in site" />
                 </form>
               </div>
               <div class="icon-user">
-                <a href=""><i class="bi bi-person-circle"></i> </a>
                 <a href="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-person-circle"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path
-                      fill-rule="evenodd"
-                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-                    />
-                  </svg>
-                </a>
+                  <i class="fa-solid fa-circle-user" style="font-size: 2rem"></i
+                ></a>
               </div>
             </div>
           </header>

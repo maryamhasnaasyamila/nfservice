@@ -91,8 +91,8 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Kevin Anderson</h6>
-                <span>Web Designer</span>
+                <h6>Nama Service</h6>
+                <span>Jenis Service (Otomotif/Elektronik)</span>
               </li>
               <li>
                 <hr class="dropdown-divider" />
@@ -137,7 +137,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link collapsed" href="index.html">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -209,8 +209,8 @@
                   alt="Profile"
                   class="rounded-circle"
                 />
-                <h2>Kevin Anderson</h2>
-                <h3>Web Designer</h3>
+                <h2>Nama Service</h2>
+                <h3>Jenis Service (Otomotif/Elektronik)</h3>
               </div>
             </div>
           </div>
@@ -226,7 +226,7 @@
                       data-bs-toggle="tab"
                       data-bs-target="#profile-overview"
                     >
-                      Overview
+                      Details
                     </button>
                   </li>
 
@@ -236,7 +236,7 @@
                       data-bs-toggle="tab"
                       data-bs-target="#profile-edit"
                     >
-                      Edit Profile
+                      Ubah Profil
                     </button>
                   </li>
                   <li class="nav-item">
@@ -245,7 +245,7 @@
                       data-bs-toggle="tab"
                       data-bs-target="#profile-change-password"
                     >
-                      Change Password
+                      Ganti Kata Sandi
                     </button>
                   </li>
                 </ul>
@@ -254,7 +254,7 @@
                     class="tab-pane fade show active profile-overview"
                     id="profile-overview"
                   >
-                    <h5 class="card-title">About</h5>
+                    <h5 class="card-title">Tentang</h5>
                     <p class="small fst-italic">
                       Sunt est soluta temporibus accusantium neque nam maiores
                       cumque temporibus. Tempora libero non est unde veniam est
@@ -262,46 +262,51 @@
                       perspiciatis odit. Fuga sequi sed ea saepe at unde.
                     </p>
 
-                    <h5 class="card-title">Profile Details</h5>
+                    <h5 class="card-title">Profil</h5>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Full Name</div>
-                      <div class="col-lg-9 col-md-8">Kevin Anderson</div>
+                      <div class="col-lg-3 col-md-4 label">Nama Perusahaan</div>
+                      <div class="col-lg-9 col-md-8">(Nama Service)</div>
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Company</div>
+                      <div class="col-lg-3 col-md-4 label">
+                        Penanggung Jawab
+                      </div>
+                      <div class="col-lg-9 col-md-8">(Nama Lengkap)</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Jenis Service</div>
                       <div class="col-lg-9 col-md-8">
-                        Lueilwitz, Wisoky and Leuschke
+                        (Service Otomotif/Service Elektronik)
                       </div>
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Job</div>
-                      <div class="col-lg-9 col-md-8">Web Designer</div>
+                      <div class="col-lg-3 col-md-4 label">Kota</div>
+                      <div class="col-lg-9 col-md-8">(Nama Kota)</div>
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Country</div>
-                      <div class="col-lg-9 col-md-8">USA</div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Address</div>
+                      <div class="col-lg-3 col-md-4 label">
+                        Alamat Tempat Service
+                      </div>
                       <div class="col-lg-9 col-md-8">
-                        A108 Adam Street, New York, NY 535022
+                        (Alamat lengkap: jalan, nomor, rt/rw, kelurahan,
+                        kecamatan, kode pos)
                       </div>
                     </div>
 
                     <div class="row">
-                      <div class="col-lg-3 col-md-4 label">Phone</div>
-                      <div class="col-lg-9 col-md-8">(436) 486-3538 x29071</div>
+                      <div class="col-lg-3 col-md-4 label">No WhatsApp</div>
+                      <div class="col-lg-9 col-md-8">(Nomor WA)</div>
                     </div>
 
                     <div class="row">
                       <div class="col-lg-3 col-md-4 label">Email</div>
                       <div class="col-lg-9 col-md-8">
-                        k.anderson@example.com
+                        (Email kantor/instansi)
                       </div>
                     </div>
                   </div>
@@ -316,7 +321,7 @@
                         <label
                           for="profileImage"
                           class="col-md-4 col-lg-3 col-form-label"
-                          >Profile Image</label
+                          >Logo Perusahaan</label
                         >
                         <div class="col-md-8 col-lg-9">
                           <img src="assets/img/profile-img.jpg" alt="Profile" />
@@ -349,7 +354,7 @@
                             type="text"
                             class="form-control"
                             id="fullName"
-                            value="Kevin Anderson"
+                            value="Nama Service"
                           />
                         </div>
                       </div>
@@ -401,7 +406,7 @@ Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Temp
                             type="text"
                             class="form-control"
                             id="Job"
-                            value="Web Designer"
+                            value="Jenis Service (Otomotif/Elektronik)"
                           />
                         </div>
                       </div>
