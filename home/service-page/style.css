@@ -109,16 +109,16 @@ header {
 }
 
 .image-container {
-    width: 100%;
-    max-width: 100%;
+    display: inline-block;
+    border-radius: 15px;
     overflow: hidden;
-    position: relative;
 }
 
 .image-container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 15px;    
 }
 
 .filter-container {
@@ -168,6 +168,7 @@ header {
     background-color: #b0cbdc;
     padding: 10px;
     border-radius: 5px;
+    margin: 0 100px;
 }
 
 .price-input {
@@ -175,7 +176,7 @@ header {
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 3px;
-    margin: 0 5px;
+    margin: 0 20px;
     text-align: center;
 }
 
@@ -293,15 +294,14 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-    .image-container {
+
+@media (max-width: 600px) {
+    .container {
         padding: 10px;
     }
-}
 
-@media (max-width: 480px) {
-    .image-container {
-        padding: 5px;
+    .image-wrapper {
+        width: 100%;
     }
 }
 
