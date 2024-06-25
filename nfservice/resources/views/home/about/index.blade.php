@@ -32,8 +32,8 @@
                 margin-top: -3rem;
                 margin-bottom: -2rem;
               ">
-                        <img src="{{ asset('/home/assets/img/logo1.png') }}'" alt="circle image" class="img-fluid"
-                            width="45%" style="margin-top: -5rem; margin-bottom: -2rem" />
+                        <img src="{{ asset('/home/assets/img/logo1.png') }}" alt="circle image" class="img-fluid"
+                            width="45%" style="margin-top: -2rem; margin-bottom:0rem" />
                     </div>
 
                     <div class="px-3 about-nfservice">
