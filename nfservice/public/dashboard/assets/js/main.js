@@ -33,7 +33,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -281,26 +281,26 @@
   /**
    * Initiate Datatables
    */
-  const datatables = select('.datatable', true)
-  datatables.forEach(datatable => {
-    new simpleDatatables.DataTable(datatable, {
-      perPageSelect: [5, 10, 15, ["All", -1]],
-      columns: [{
-          select: 2,
-          sortSequence: ["desc", "asc"]
-        },
-        {
-          select: 3,
-          sortSequence: ["desc"]
-        },
-        {
-          select: 4,
-          cellClass: "green",
-          headerClass: "red"
-        }
-      ]
-    });
-  })
+//   const datatables = select('.datatable', true)
+//   datatables.forEach(datatable => {
+//     new simpleDatatables.DataTable(datatable, {
+//       perPageSelect: [5, 10, 15, ["All", -1]],
+//       columns: [{
+//           select: 2,
+//           sortSequence: ["desc", "asc"]
+//         },
+//         {
+//           select: 3,
+//           sortSequence: ["desc"]
+//         },
+//         {
+//           select: 4,
+//           cellClass: "green",
+//           headerClass: "red"
+//         }
+//       ]
+//     });
+//   })
 
   /**
    * Autoresize echart charts

@@ -182,7 +182,7 @@ h6 {
 
 /* Light Backgrounds */
 .bg-primary-light {
-  background-color: #cfe2ff;
+  background-color: #93BFCF;
   border-color: #cfe2ff;
 }
 
@@ -919,6 +919,24 @@ h6 {
 .dashboard .recent-sales {
   font-size: 14px;
 }
+
+.button-table {
+    display: flex;
+    justify-content:center;
+    margin: 2rem 0 1rem 0rem;
+}
+
+.tabel-style {
+    margin-top: 2rem;
+}
+
+.button-table > a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+
 
 .dashboard .recent-sales .table thead {
   background: #f6f6fe;

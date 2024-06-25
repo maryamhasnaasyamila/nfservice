@@ -1,4 +1,5 @@
 @include('dashboard.layout.navbar')
-@include('dashboard.layout.sidebar')
+{{-- @include('dashboard.layout.sidebar') --}}
+
 @yield('content')
 @include('dashboard.layout.footer')
