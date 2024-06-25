@@ -42,20 +42,19 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li>
-                        <a style="color: white" href="{{ url('/home-page') }}" class="active">Home</a>
+                    <li class="navlink-style">
+                        <a href="{{ url('/home-page') }}" class="active">Home</a>
                     </li>
-                    <li><a style="color: white" href="{{ url('/home-page/services') }}">Services</a></li>
-                    <li><a style="color: white" href="{{ url('/home-page/about') }}">About</a></li>
+                    <li class="navlink-style"><a href="{{ url('/home-page/services') }}">Services</a></li>
+                    <li class="navlink-style"><a href="{{ url('/home-page/about-us') }}">About</a></li>
                     <li>
                         <form class="search-box light-background" action="">
                             <input style="border-radius: 5px; padding: 3px; margin: 5px" type="text" name=""
                                 id="" placeholder="Search here" />
                         </form>
                     </li>
-                    <li>
-                        <a style="color: white" href=""><i style="font-size: 2rem"
-                                class="bi bi-person-circle"></i>
+                    <li class="navlink-style">
+                        <a href=""><i style="font-size: 2rem" class="bi bi-person-circle"></i>
                         </a>
                     </li>
                 </ul>

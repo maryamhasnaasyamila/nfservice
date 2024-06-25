@@ -34,17 +34,17 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" style="display: flex;
                 justify-content: center;">
-                                <img src="/landing/assets/img/image-1.png" alt="Image" class="img-fluid"
+                                <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
                             <div class="swiper-slide" style="display: flex;
                 justify-content: center;">
-                                <img src="/landing/assets/img/image-1.png" alt="Image" class="img-fluid"
+                                <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
                             <div class="swiper-slide"style="display: flex;
-                    justify-content: center;">
-                                <img src="/landing/assets/img/image-1.png" alt="Image" class="img-fluid"
+                                                justify-content: center;">
+                                <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
                         </div>
@@ -85,8 +85,9 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
                         <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
-                            <a href="blog-details.html" class="thumb d-block"><img src="assets/img/img_h_4.jpg"
-                                    alt="Image" class="img-fluid rounded" /></a>
+                            <a href="blog-details.html" class="thumb d-block"><img
+                                    src="{{ asset('/home/assets/img/img_h_4.jpg') }}" alt="Image"
+                                    class="img-fluid rounded" /></a>
 
                             <div class="post-content">
                                 <div class="meta">
@@ -102,8 +103,9 @@
 
                     <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
                         <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
-                            <a href="blog-details.html" class="thumb d-block"><img src="assets/img/img_h_2.jpg"
-                                    alt="Image" class="img-fluid rounded" /></a>
+                            <a href="blog-details.html" class="thumb d-block"><img
+                                    src="{{ asset('/home/assets/img/img_h_2.jpg') }}" alt="Image"
+                                    class="img-fluid rounded" /></a>
 
                             <div class="post-content">
                                 <div class="meta">
@@ -119,8 +121,9 @@
 
                     <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
                         <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
-                            <a href="blog-details.html" class="thumb d-block"><img src="assets/img/img_h_3.jpg"
-                                    alt="Image" class="img-fluid rounded" /></a>
+                            <a href="blog-details.html" class="thumb d-block"><img
+                                    src="{{ asset('/home/assets/img/img_h_3.jpg') }}" alt="Image"
+                                    class="img-fluid rounded" /></a>
 
                             <div class="post-content">
                                 <div class="meta">

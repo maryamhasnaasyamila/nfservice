@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -88,4 +89,11 @@ Route::get(
 Route::get(
     '/home-page/form-otomotif',
     [FormOtomotifController::class, 'index']
+);
+
+
+// ROOT untuk ABOUT US
+Route::get(
+    '/home-page/about-us',
+    [AboutController::class, 'index']
 );

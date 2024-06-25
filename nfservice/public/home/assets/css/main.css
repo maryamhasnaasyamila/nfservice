@@ -2552,3 +2552,23 @@ main > .form-elektronik {
   display: inline-block;
   margin: 100px auto;
 }
+
+
+/*
+# CSS untuk NAVBAR LINK
+*/
+.navlink-style > a{
+    color: #6096B4;
+}
+
+@media (min-width: 786px) {
+    .navlink-style > a {
+        color: #6096B4;
+    }
+}
+
+@media (min-width: 992px) {
+    .navlink-style > a {
+        color: white;
+    }
+}
