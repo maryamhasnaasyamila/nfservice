@@ -16,7 +16,8 @@ use App\Http\Controllers\RekapOrderController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
-
+use App\Http\Controllers\FormElektronikController;
+use App\Http\Controllers\FormOtomotifController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -76,4 +77,15 @@ Route::get(
 Route::get(
     '/daftar-akun',
     [RegisterController::class, 'index']
+);
+
+// ROOT untuk FORM
+Route::get(
+    '/home-page/form-elektronik',
+    [FormElektronikController::class, 'index']
+);
+
+Route::get(
+    '/home-page/form-otomotif',
+    [FormOtomotifController::class, 'index']
 );
