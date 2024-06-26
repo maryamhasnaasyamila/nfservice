@@ -725,7 +725,7 @@ section,
 # Stats Section
 --------------------------------------------------------------*/
 .stats {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .info-section {
@@ -751,6 +751,14 @@ section,
     font-size: 45px;
     margin-bottom: 30px;
     color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media (max-width: 778px) {
+    .stats .content-title {
+        font-size: 35px;
+    }
 }
 
 .stats p {
@@ -770,7 +778,7 @@ section,
     background-color: var(--accent-color);
     color: var(--contrast-color);
     border-radius: 30px;
-    padding: 8px 30px;
+    /* padding: 8px 30px; */
     border: 2px solid transparent;
     transition: 0.3s all ease-in-out;
     font-size: 14px;
@@ -848,10 +856,10 @@ section,
     color: color-mix(in srgb, #6096b4, transparent 25%);
 }
 
-.blog-posts .post-entry .post-content {
+/* .blog-posts .post-entry .post-content {
     padding-left: 30px;
     padding-right: 30px;
-}
+} */
 
 .blog-posts .post-entry .post-content h3 {
     font-size: 18px;
@@ -886,6 +894,20 @@ section,
     font-size: 14px;
     color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
+
+@media (max-width: 768px) {
+    .post-content {
+        text-align: center;
+        margin-left: -1.5rem;
+    }
+}
+
+/* @media (max-width: 992px) {
+    .post-content {
+        text-align: center;
+        margin-left: -5rem;
+    }
+} */
 
 /*--------------------------------------------------------------
 # Tabs Section
@@ -2798,5 +2820,91 @@ iframe {
     .service-section img {
         max-width: 100%;
         margin-top: 20px;
+    }
+}
+
+/*
+# CSS untuk PROFIL TOKO
+*/
+.section-title {
+    padding: 0 5rem;
+}
+
+.toko-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0.5rem 6rem 1rem 6rem;
+}
+
+.toko-section .logo {
+    margin-top: 2rem;
+    margin-left: 0rem;
+}
+
+.toko-section .logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.toko-section .toko-info {
+    flex: 2;
+    text-align: left;
+}
+
+.category-tags {
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    border-color: transparent;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.toko-section .btn-view-profile {
+    margin-top: 1rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.toko-section .toko-info p {
+    margin: 1rem 0 1rem 0;
+    text-align: justify;
+}
+
+.toko-section .toko-info h1 {
+    color: #6096b4;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.btn-categories {
+    margin: 1rem 0 1rem 0;
+    justify-content: center;
+}
+
+.toko-section .btn-view-profile button {
+    background-color: #6096b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    margin: 0.5rem 0 3rem 0;
+}
+
+.toko-section .btn-view-profile button:hover {
+    background-color: #6096b4;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        padding: 0;
+    }
+
+    .toko-section {
+        margin: 0;
     }
 }

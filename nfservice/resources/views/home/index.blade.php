@@ -75,13 +75,13 @@
         <!-- /Stats Section -->
 
         <!-- Blog Posts Section -->
-        <section id="blog-posts" class="blog-posts section">
+        <section id="blog-posts services" class="blog-posts section">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h1 style="color: #93bfcf">Rekomendasi Service</h1>
             </div>
             <!-- End Section Title -->
-            <div class="container">
+            <div class="container rekomen-box">
                 <div class="row">
                     <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
                         <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
@@ -119,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
+                    <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4 rekomendasi-box">
                         <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
                             <a href="blog-details.html" class="thumb d-block"><img
                                     src="{{ asset('/home/assets/img/img_h_3.jpg') }}" alt="Image"
