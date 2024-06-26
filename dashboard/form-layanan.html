@@ -198,6 +198,9 @@
         <nav>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item">
+              <a href="daftar-layanan-mitra.html">Layanan Service</a>
+            </li>
             <li class="breadcrumb-item active">Tambah Layanan Service</li>
           </ol>
         </nav>
@@ -218,10 +221,13 @@
                     <input type="text" class="form-control" id="service_name" />
                   </div>
                   <div class="col-md-6">
-                    <label for="desc" class="form-label"
-                      >Deskripsi Singkat</label
-                    >
-                    <input type="textarea" class="form-control" id="desc" />
+                    <label for="price" class="form-label">Harga</label>
+                    <input
+                      type="textarea"
+                      class="form-control"
+                      id="price"
+                      placeholder="Harga minimun Rp10.0000"
+                    />
                   </div>
                   <div class="col-md-6">
                     <label for="category" class="form-label">Kategori</label>
@@ -234,12 +240,14 @@
                     </select>
                   </div>
                   <div class="col-12">
-                    <label for="price" class="form-label">Harga</label>
+                    <label for="desc" class="form-label"
+                      >Deskripsi Singkat</label
+                    >
                     <input
-                      type="number"
+                      type="text"
                       class="form-control"
-                      id="price"
-                      placeholder="Harga minimum Rp10.000"
+                      id="desc"
+                      placeholder=""
                     />
                   </div>
                   <div class="col-12">

@@ -13,6 +13,7 @@ use App\Http\Controllers\AllLayananController;
 use App\Http\Controllers\MitraController;
 use App\Http\Controllers\AllRekapController;
 use App\Http\Controllers\RekapOrderController;
+use App\Http\Controllers\FormsController;
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -68,6 +69,12 @@ Route::get(
     '/dashboard-page/mitra-recap',
     [RekapOrderController::class, 'index']
 );
+
+Route::get(
+    '/dashboard-page/service/form-layanan',
+    [FormsController::class, 'index']
+);
+
 
 
 // ROOT untuk Home

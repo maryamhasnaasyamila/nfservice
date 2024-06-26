@@ -43,7 +43,7 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li class="navlink-style">
-                        <a href="{{ url('/home-page') }}" class="active">Home</a>
+                        <a href="{{ url('/home-page') }}">Home</a>
                     </li>
                     <li class="navlink-style"><a href="{{ url('/home-page#services') }}">Services</a></li>
                     <li class="navlink-style"><a href="{{ url('/home-page/about-us') }}">About</a></li>

@@ -43,7 +43,7 @@
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
                             <div class="swiper-slide"style="display: flex;
-                                                justify-content: center;">
+                                                    justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -166,11 +166,14 @@
                     align-items: center;
                     margin-right: 2rem;
                   ">
-                                <i class="fa-solid fa-mobile-screen-button" style="color: #6096b4; font-size: 4rem"></i>
+                                <a href="{{ url('/home-page/service-elektronik') }}"><i
+                                        class="fa-solid fa-mobile-screen-button"
+                                        style="color: #6096b4; font-size: 4rem"></i></a>
                                 <p style="margin: 0.5rem 0 0 0; color: #93bfcf">Elektronik</p>
                             </div>
                             <div>
-                                <i class="fa-solid fa-motorcycle" style="color: #6096b4; font-size: 4rem"></i>
+                                <a href="{{ url('/home-page/service-otomotif') }}"><i class="fa-solid fa-motorcycle"
+                                        style="color: #6096b4; font-size: 4rem"></i></a>
                                 <p style="margin: 0.5rem 0 0 0; color: #93bfcf">Otomotif</p>
                             </div>
                         </div>

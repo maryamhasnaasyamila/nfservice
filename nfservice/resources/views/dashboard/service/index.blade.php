@@ -29,8 +29,6 @@
                                         <th>Deskripsi</th>
                                         <th>Kategori</th>
                                         <th>Harga</th>
-                                        <th>Mitra</th>
-                                        <th>No WA</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -44,8 +42,6 @@
                                             ditunggu!</td>
                                         <td>Self Service</td>
                                         <td>Rp. 600.000</td>
-                                        <td>Konter Koko</td>
-                                        <td>088765434</td>
                                         <td style="display:flex; justify-content:space-evenly">
                                             <button style="margin-right: 5px" class="btn btn-sm btn-warning"><i
                                                     class="bi bi-pencil-square"></i>
@@ -61,8 +57,6 @@
                                         <td>Sedia jasa servis LCD HP untuk semua tipe handphone.</td>
                                         <td>Self Service</td>
                                         <td>Rp. 800.000</td>
-                                        <td>Konter Koko</td>
-                                        <td>088987654</td>
                                         <td style="display:flex; justify-content:space-evenly">
                                             <button style="margin-right: 5px" class="btn btn-sm btn-warning"><i
                                                     class="bi bi-pencil-square"></i>
@@ -78,7 +72,7 @@
                                 <a href="">
                                     <i class="bi bi-arrow-left-circle-fill"></i>
                                 </a> |
-                                <a href="">
+                                <a href="{{ url('/dashboard-page/service/form-layanan')}}">
                                     <i class="bi bi-plus-circle-fill"></i>
 
                                 </a>
