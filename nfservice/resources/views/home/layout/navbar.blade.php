@@ -54,7 +54,7 @@
                         </form>
                     </li>
                     <li class="navlink-style">
-                        <a href=""><i style="font-size: 2rem" class="bi bi-person-circle"></i>
+                        <a href="{{ url('/home-page/login')}}"><i style="font-size: 2rem" class="bi bi-person-circle"></i>
                         </a>
                     </li>
                 </ul>

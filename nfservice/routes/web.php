@@ -20,6 +20,15 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\FormElektronikController;
 use App\Http\Controllers\FormOtomotifController;
 
+use App\Http\Controllers\ServiceElektronikController;
+use App\Http\Controllers\ServiceOtomotifController;
+
+use App\Http\Controllers\TokoController;
+use App\Http\Controllers\DetailServiceController;
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -70,13 +79,13 @@ Route::get(
 
 // ROOT untuk Login
 Route::get(
-    '/masuk-akun',
+    '/home-page/login',
     [LoginController::class, 'index']
 );
 
 // ROOT untuk Register
 Route::get(
-    '/daftar-akun',
+    '/home-page/register',
     [RegisterController::class, 'index']
 );
 
@@ -96,4 +105,29 @@ Route::get(
 Route::get(
     '/home-page/about-us',
     [AboutController::class, 'index']
+);
+
+
+// ROOT untuk PROFIL TOKO
+Route::get(
+    '/home-page/toko',
+    [TokoController::class, 'index']
+);
+
+// ROOT untuk DETAIL SERVICE
+Route::get(
+    '/home-page/detail-service',
+    [DetailServiceController::class, 'index']
+);
+
+// ROOT untuk SERVICE ELEKTRONIK
+Route::get(
+    '/home-page/service-elektronik',
+    [ServiceElektronikController::class, 'index']
+);
+
+// ROOT untuk SERVICE OTOMOTIF
+Route::get(
+    '/home-page/service-otomotif',
+    [ServiceOtomotifController::class, 'index']
 );

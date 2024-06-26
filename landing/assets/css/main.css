@@ -2587,7 +2587,190 @@ iframe {
     margin: -5rem 10rem -1rem 10rem;
   }
 
-  .about-nfservice > p{
+  .about-nfservice > p {
     padding: 2rem;
+  }
+}
+
+/*
+# CSS untuk Detail Service
+*/
+
+.img-fluid {
+  border-radius: 10px;
+  width: 75%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-service-hero {
+  background-color: #bdcdd6;
+}
+
+.info-detail-service {
+  text-align: left;
+}
+
+.btn-hero-detail {
+  display: flex;
+  justify-content: left;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.btn-hero-detail > #kontak {
+  background-color: #d9d9d9;
+  border-color: transparent;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-hero-detail > #booking {
+  background-color: #6096b4;
+  border-color: transparent;
+  font-weight: bold;
+  color: white;
+}
+
+.action-hero {
+  margin-right: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.provider-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.provider-section .logo {
+  flex: 1;
+  margin-top: 2rem;
+  margin-left: 8rem;
+}
+.provider-section .logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.provider-section .provider-info {
+  flex: 2;
+  text-align: left;
+}
+.provider-section .provider-info h1 {
+  color: #6096b4;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.btn-categories {
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: left;
+}
+
+.category-tags {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  border-color: transparent;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.provider-section .provider-info p {
+  margin: 1rem 0 1rem 0;
+  text-align: left;
+}
+
+.provider-section .view-profile {
+  flex: 1;
+  text-align: left;
+}
+
+.provider-section .view-profile button {
+  background-color: #6096b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.provider-section .view-profile button:hover {
+  background-color: #6096b4;
+}
+
+@media (max-width: 768px) {
+  .provider-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .provider-section .logo {
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+  .provider-section .view-profile {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+  .provider-section .provider-info p {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .provider-section .provider-info h1 {
+    color: #6096b4;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .btn-categories {
+    margin: 1rem 0 1rem 0;
+    justify-content: center;
+  }
+
+  .detail-service-hero {
+    background-color: #bdcdd6;
+  }
+
+  .info-detail-service {
+    text-align: center;
+  }
+
+  .btn-hero-detail {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0.5rem 1rem;
+  }
+
+  .img-fluid {
+    width: 90%;
+  }
+
+  .service-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-section .text-content {
+    padding-right: 0;
+  }
+  .service-section img {
+    max-width: 100%;
+    margin-top: 20px;
   }
 }

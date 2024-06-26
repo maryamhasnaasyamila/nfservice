@@ -1,3 +1,3 @@
-@extends('home.layout.index')
+@extends('home.layout.profil-toko')
 @section('content')
 @endsection
