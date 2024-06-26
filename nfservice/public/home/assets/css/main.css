@@ -597,7 +597,7 @@ section,
 
 .about-2 .lead {
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: normal;
     color: var(--default-color);
 }
@@ -2624,9 +2624,22 @@ iframe {
     margin: 1rem 3rem -2rem 3rem;
 }
 
+.img-fluid-about {
+    margin-top: -2rem;
+    margin-bottom: 0rem;
+    width: 60%;
+}
+
+
 @media (min-width: 778px) {
     .about-nfservice {
         margin: 1.5rem 4rem -2rem 4rem;
+    }
+
+    .img-fluid-about {
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        width: 40%;
     }
 }
 
@@ -2637,6 +2650,11 @@ iframe {
 
     .about-nfservice > p {
         padding: 1rem;
+    }
+    .img-fluid-about {
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        width: 40%;
     }
 }
 

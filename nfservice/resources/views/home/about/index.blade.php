@@ -32,12 +32,12 @@
                 margin-top: -3rem;
                 margin-bottom: -2rem;
               ">
-                        <img src="{{ asset('/home/assets/img/logo1.png') }}" alt="circle image" class="img-fluid"
-                            width="45%" style="margin-top: -2rem; margin-bottom:0rem" />
+                        <img src="{{ asset('/home/assets/img/logo1.png') }}" alt="circle image" class="img-fluid-about"
+                            />
                     </div>
 
                     <div class="px-3 about-nfservice">
-                        <p class="lead" style="text-align: justify">
+                        <p class="lead caption-about">
                             NF Service berkomitmen untuk menyediakan layanan perbaikan
                             terbaik dengan harga yang kompetitif. Kami memahami betapa
                             pentingnya kendaraan, laptop, dan perangkat elektronik dalam
