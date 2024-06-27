@@ -47,12 +47,6 @@
                     </li>
                     <li class="navlink-style"><a href="{{ url('/home-page#services') }}">Services</a></li>
                     <li class="navlink-style"><a href="{{ url('/home-page/about-us') }}">About</a></li>
-                    <li>
-                        <form class="search-box light-background" action="">
-                            <input style="border-radius: 5px; padding: 3px; margin: 5px" type="text" name=""
-                                id="" placeholder="Search here" />
-                        </form>
-                    </li>
                     <li class="navlink-style">
                         <a href="{{ url('/home-page/login')}}"><i style="font-size: 2rem" class="bi bi-person-circle"></i>
                         </a>

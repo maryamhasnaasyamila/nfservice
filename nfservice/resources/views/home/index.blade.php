@@ -1,6 +1,6 @@
 @extends('home.layout.index')
 @section('content')
-    <main class="main">
+    <main>
         <!-- About Section -->
         <section id="about" class="about section">
             <div class="container">
@@ -42,8 +42,9 @@
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
-                            <div class="swiper-slide"style="display: flex;
-                                                    justify-content: center;">
+                            <div
+                                class="swiper-slide"style="display: flex;
+                                                                                                                                                                                                justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -55,190 +56,145 @@
             </div>
         </section>
         <!-- /About Section -->
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section">
 
-        <!-- Stats Section -->
-        <section id="stats" class="stats section info-section">
+            <img src="{{ asset('/home/assets/img/bg-blue.jpg') }}" alt="">
+
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 offset-lg-0 order-lg-2 text-center">
-                        <h1 class="content-title">
-                            Temukan Service Terbaik di Sekitar Anda
-                        </h1>
-                        <p class="lead">
-                            Cari service kendaraan dan elektronik tanpa ribet!
-                        </p>
-                        <button class="btn-cari-service">Cari Service</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Stats Section -->
-
-        <!-- Blog Posts Section -->
-        <section id="blog-posts services" class="blog-posts section">
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h1 style="color: #93bfcf">Rekomendasi Service</h1>
-            </div>
-            <!-- End Section Title -->
-            <div class="container rekomen-box">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
-                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
-                            <a href="blog-details.html" class="thumb d-block"><img
-                                    src="{{ asset('/home/assets/img/img_h_4.jpg') }}" alt="Image"
-                                    class="img-fluid rounded" /></a>
-
-                            <div class="post-content">
-                                <div class="meta">
-                                    <a href="blog-details.html" class="cat">Service A</a> •
-                                    <span class="date">(Jenis Service)</span>
-                                </div>
-                                <h3>
-                                    <a href="blog-details.html">Deskripsi service</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4">
-                        <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
-                            <a href="blog-details.html" class="thumb d-block"><img
-                                    src="{{ asset('/home/assets/img/img_h_2.jpg') }}" alt="Image"
-                                    class="img-fluid rounded" /></a>
-
-                            <div class="post-content">
-                                <div class="meta">
-                                    <a href="blog-details.html" class="cat">Service A</a> •
-                                    <span class="date">(Jenis Service)</span>
-                                </div>
-                                <h3>
-                                    <a href="blog-details.html">Deskripsi service</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4 rekomendasi-box">
-                        <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
-                            <a href="blog-details.html" class="thumb d-block"><img
-                                    src="{{ asset('/home/assets/img/img_h_3.jpg') }}" alt="Image"
-                                    class="img-fluid rounded" /></a>
-
-                            <div class="post-content">
-                                <div class="meta">
-                                    <a href="blog-details.html" class="cat">Service A</a> •
-                                    <span class="date">(Jenis Service)</span>
-                                </div>
-                                <h3>
-                                    <a href="blog-details.html">Deskripsi service</a>
-                                </h3>
-                            </div>
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h2>Temukan Service Terbaik di Sekitar Anda</h2>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.</p>
+                            <a class="cta-btn" href="#">Cari Service</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- /Blog Posts Section -->
 
-        <hr />
-        <!-- Tabs Section -->
-        <section id="tabs" class="tabs section">
-            <div class="container" style="padding: 1rem">
-                <div class="kategori" style="margin: 0; padding: 0rem">
-                    <section class="section-kategori">
-                        <div style="flex-basis: 50%; text-align: center" class="title-kategori">
-                            <h1
-                                style="
-                    color: #93bfcf;
-                    font-size: 2.5rem;
-                    align-items: center;
-                    margin: auto;
-                  ">
-                                Kategori Service
-                            </h1>
+        </section><!-- /Call To Action Section -->
+
+        <!-- Featured Services Section -->
+        <section id="featured-services" class="featured-services section">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-laptop"></i>
+
                         </div>
-                        <div class="right">
-                            <div
-                                style="
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-right: 2rem;
-                  ">
-                                <a href="{{ url('/home-page/service-elektronik') }}"><i
-                                        class="fa-solid fa-mobile-screen-button"
-                                        style="color: #6096b4; font-size: 4rem"></i></a>
-                                <p style="margin: 0.5rem 0 0 0; color: #93bfcf">Elektronik</p>
-                            </div>
-                            <div>
-                                <a href="{{ url('/home-page/service-otomotif') }}"><i class="fa-solid fa-motorcycle"
-                                        style="color: #6096b4; font-size: 4rem"></i></a>
-                                <p style="margin: 0.5rem 0 0 0; color: #93bfcf">Otomotif</p>
-                            </div>
+                        <div>
+                            <h4 class="title">Kategori Elektronik</h4>
+                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                            <a href="{{ url('/home-page/service-elektronik') }}" class="readmore stretched-link"><span>Show
+                                    All</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-        <!-- /Tabs Section -->
-        <hr />
-
-        <!-- Find Service Section -->
-        <section id="" class="section find-section">
-            <div class="container" style="margin: auto">
-                <div class="find-service">
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.241610439622!2d106.84187777453303!3d-6.362768562243345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed6178a2b32f%3A0x20d7938791acfd4a!2sSTT%20Terpadu%20Nurul%20Fikri%20(Kampus%20A%20-%20Sekretariat)!5e0!3m2!1sid!2sid!4v1718528018180!5m2!1sid!2sid"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            frameborder="0"></iframe>
                     </div>
+                    <!-- End Service Item -->
 
-                    <div class="form-section">
-                        <h1 style="color: #6096b4">Temukan Service</h1>
-                        <p style="margin: 1rem 0 1rem 0.5rem; color: #93bfcf">
-                            Isi dengan detail yang anda butuhkan
-                        </p>
-                        <h3
-                            style="
-                  margin: 2rem 0 1rem 0.5rem;
-                  font-size: 1.5rem;
-                  color: #6096b4;
-                ">
-                            Nama Service
-                        </h3>
-                        <input type="text" placeholder="Contoh: Service Laptop" id="jenisService"
-                            style="
-                  margin-left: 0.5rem;
-                  padding: 0.5rem;
-                  width: 15rem;
-                  border-radius: 5px;
-                  border-color: #d9d9d9;
-                " />
-                        <h3
-                            style="
-                  margin: 2rem 0 1rem 0.5rem;
-                  font-size: 1.5rem;
-                  color: #6096b4;
-                ">
-                            Lokasi
-                        </h3>
-                        <input
-                            style="
-                  margin-left: 0.5rem;
-                  padding: 0.5rem;
-                  width: 15rem;
-                  border-radius: 5px;
-                  border-color: #d9d9d9;
-                "
-                            type="text" placeholder="Masukkan nama kota" id="lokasi" />
-                        <br />
-                        <button type="button" class="btn-find">Cari</button>
-                    </div>
+                    <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-car-front-fill"></i>
+
+                        </div>
+                        <div>
+                            <h4 class="title">Kategori Otomotif</h4>
+                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                ex ea commodo consequat tarad limino ata</p>
+                            <a href="{{ url('/home-page/service-elektronik') }}" class="readmore stretched-link"><span>Show
+                                    All</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div><!-- End Service Item -->
                 </div>
+
             </div>
-        </section>
-        <!-- /Blog Posts Section -->
+
+        </section><!-- /Featured Services Section -->
+        <hr>
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+            <div class="container section-title-rekomen" data-aos="fade-up">
+                <h2>Rekomendasi Service</h2>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{{ asset('/home/assets/img/service-1.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <h3>Nama Service</h3>
+                            <p>Deskripsi Service</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{{ asset('/home/assets/img/service-2.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
+                            <p>Deskripsi Service</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{{ asset('/home/assets/img/service-3.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
+                            <p>Deskripsi Service</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{{ asset('/home/assets/img/service-4.jpg') }}" alt="" class="img-fluid">
+                            </div>
+                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
+                            <p>Deskripsi Service</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{{ asset('/home/assets/img/service-5.jpg') }}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <h3>Nama Service</h3>
+                            <p>Deskripsi Service</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{{ asset('/home/assets/img/service-6.jpg') }}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
+                            <p>Deskripsi Service</p>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Services Section -->
     </main>
 @endsection

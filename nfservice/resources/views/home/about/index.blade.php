@@ -32,8 +32,7 @@
                 margin-top: -3rem;
                 margin-bottom: -2rem;
               ">
-                        <img src="{{ asset('/home/assets/img/logo1.png') }}" alt="circle image" class="img-fluid-about"
-                            />
+                        <img src="{{ asset('/home/assets/img/logo1.png') }}" alt="circle image" class="img-fluid-about" />
                     </div>
 
                     <div class="px-3 about-nfservice">
@@ -87,7 +86,7 @@
                       "spaceBetween": 30
                     },
                     "1200": {
-                      "slidesPerView": 3,
+                      "slidesPerView": 5,
                       "spaceBetween": 30
                     }
                   }
@@ -97,7 +96,8 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid" />
+                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                            class="img-fluid" />
                                     </div>
                                     <h3 clas="">
                                         <a href="#"><span class="">Muhammad Zidan</span></a>
@@ -108,7 +108,8 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="assets/img/team/team-4.jpg" alt="Image" class="img-fluid" />
+                                        <img src="{{ url('/home/assets/img/team/team-4.jpg') }}" alt="Image"
+                                            class="img-fluid" />
                                     </div>
                                     <h3 clas="">
                                         <a href="#"><span class="">Maryam Hasnaa' S.</span></a>
@@ -119,18 +120,8 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="assets/img/team/team-4.jpg" alt="Image" class="img-fluid" />
-                                    </div>
-                                    <h3 clas="">
-                                        <a href="#"><span class="">Jamilatun Khoerunnisa</span></a>
-                                    </h3>
-                                    <span class="d-block position">Developer</span>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="team">
-                                    <div class="pic">
-                                        <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid" />
+                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                            class="img-fluid" />
                                     </div>
                                     <h3 clas="">
                                         <a href="#"><span class="">Anang Febryan</span></a>
@@ -141,7 +132,20 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid" />
+                                        <img src="{{ url('/home/assets/img/team/team-4.jpg') }}" alt="Image"
+                                            class="img-fluid" />
+                                    </div>
+                                    <h3 clas="">
+                                        <a href="#"><span class="">Jamilatun Khoerunnisa</span></a>
+                                    </h3>
+                                    <span class="d-block position">Developer</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="team">
+                                    <div class="pic">
+                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                            class="img-fluid" />
                                     </div>
                                     <h3 clas="">
                                         <a href="#"><span class="">Abdullah Al Wafi</span></a>
@@ -152,7 +156,22 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid" />
+                                        <img src="{{ url('/home/assets/img/team/team-4.jpg') }}" alt="Image"
+                                            class="img-fluid" />
+                                    </div>
+                                    <h3 clas="">
+                                        <a href="#"><span class="">Hisyam Wildan Alfath</span></a>
+                                    </h3>
+                                    <span class="d-block position">Developer</span>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="team">
+                                    <div class="pic">
+                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                            class="img-fluid" />
                                     </div>
                                     <h3 clas="">
                                         <a href="#"><span class="">Alvi Sahri</span></a>
@@ -163,7 +182,8 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid" />
+                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                            class="img-fluid" />
                                     </div>
                                     <h3 clas="">
                                         <a href="#"><span class="">Muhammad Risqi</span></a>

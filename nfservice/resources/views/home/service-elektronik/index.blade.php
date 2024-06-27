@@ -1,12 +1,27 @@
 @extends('home.layout.service-elektronik')
 @section('content')
     <main>
+        <!-- Page Title -->
+        <div class="page-title light-background">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-12">
+                        <h1 class="page-title-heading">Layanan Service Elektronik</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="custom-breadcrumb breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ url('/home-page') }}">Home</a></li>
+                                <li class="breadcrumb-item active current" aria-current="page">
+                                    Service Elektronik
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title -->
         <!-- About Section -->
         <section id="about" class="about section">
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h1 class="title-service">SERVICE ELEKTRONIK</h1> <br>
-            </div><!-- End Section Title -->
             <div class="container">
                 <div class="row">
                     <div class="swiper init-swiper">
@@ -48,7 +63,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-                                                                                                                                    justify-content: center;">
+                                                                                                                                                            justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -89,7 +104,7 @@
                 </div>
             </div>
         </section>
-<br>
+        <br>
         <hr>
         <!-- Faq Section -->
         <section id="faq" class="faq section">

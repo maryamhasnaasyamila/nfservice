@@ -3212,16 +3212,3 @@ iframe {
 .services .card:hover .card-img img {
     transform: scale(1.1);
 }
-
-.section-title-rekomen {
-    text-align: center;
-    /* position: relative; */
-    margin-bottom: 2.5rem;
-    margin-top: 1rem;
-}
-
-.section-title-rekomen > h2 {
-    font-size: 2rem;
-    color: #6096b4;
-    font-weight: bolder;
-}
