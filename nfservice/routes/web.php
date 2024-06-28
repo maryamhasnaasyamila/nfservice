@@ -79,62 +79,62 @@ Route::get(
 
 // ROOT untuk Home
 Route::get(
-    '/home-page',
+    '/',
     [HomeController::class, 'index']
 );
 
 
 // ROOT untuk Login
 Route::get(
-    '/home-page/login',
+    '/login',
     [LoginController::class, 'index']
 );
 
 // ROOT untuk Register
 Route::get(
-    '/home-page/register',
+    '/register',
     [RegisterController::class, 'index']
 );
 
 // ROOT untuk FORM
 Route::get(
-    '/home-page/form-elektronik',
+    '/form-elektronik',
     [FormElektronikController::class, 'index']
 );
 
 Route::get(
-    '/home-page/form-otomotif',
+    '/form-otomotif',
     [FormOtomotifController::class, 'index']
 );
 
 
 // ROOT untuk ABOUT US
 Route::get(
-    '/home-page/about-us',
+    '/about-us',
     [AboutController::class, 'index']
 );
 
 
 // ROOT untuk PROFIL TOKO
 Route::get(
-    '/home-page/toko',
+    '/toko',
     [TokoController::class, 'index']
 );
 
 // ROOT untuk DETAIL SERVICE
 Route::get(
-    '/home-page/detail',
+    '/detail',
     [DetailServiceController::class, 'index']
 );
 
 // ROOT untuk SERVICE ELEKTRONIK
 Route::get(
-    '/home-page/service-elektronik',
+    '/service-elektronik',
     [ServiceElektronikController::class, 'index']
 );
 
 // ROOT untuk SERVICE OTOMOTIF
 Route::get(
-    '/home-page/service-otomotif',
+    '/service-otomotif',
     [ServiceOtomotifController::class, 'index']
 );
