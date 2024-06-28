@@ -21,6 +21,14 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        User::create([
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('admin@admin.com'),
+            'role' => 'admin',
+            'status' => '1',
+        ]);
+
         $this->call([
             ContributorSeeder::class,
             CategorySeeder::class,

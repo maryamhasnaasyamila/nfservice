@@ -61,21 +61,19 @@
                         data-bs-toggle="dropdown">
                         <img src="{{ asset('dashboard/assets/img/profile-img.jpg') }}" alt="photo profile"
                             class="rounded-circle" />
-                        <span class="d-none d-md-block dropdown-toggle ps-2">(Username Login)</span>
+                        <span class="d-none d-md-block dropdown-toggle ps-2">({{ Auth::user()->name }})</span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>(Username Login)</h6>
-                            <span>(Nama Service)</span>
+                            <h6>({{ Auth::user()->name }})</h6>
                         </li>
                         <li>
                             <hr class="dropdown-divider" />
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center"
-                                href="{{ url('/dashboard-page/profil') }}">
+                            <a class="dropdown-item d-flex align-items-center" href="{{ route('profile.edit') }}">
                                 <i class="bi bi-person"></i>
                                 <span>Profil Saya</span>
                             </a>
@@ -91,10 +89,18 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <i class="bi bi-box-arrow-right"></i>
-                                <span>Keluar</span>
-                            </a>
+
+                            <!-- Authentication -->
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+
+                                <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    <span>Keluar</span>
+                                </a>
+                            </form>
                         </li>
                     </ul>
                     <!-- End Profile Dropdown Items -->

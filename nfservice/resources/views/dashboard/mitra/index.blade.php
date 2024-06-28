@@ -17,7 +17,9 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <a href="{{ route('mitra.create') }}" class="btn btn-primary my-4 btn-sm">Tambah Mitra</a>
+                            @if (Auth::user()->role == 'admin')
+                                <a href="{{ route('mitra.create') }}" class="btn btn-primary my-4 btn-sm">Tambah Mitra</a>
+                            @endif
                             <!-- Table with stripped rows -->
                             <table class="table datatable">
                                 <thead>
@@ -41,12 +43,18 @@
                                             <td>{{ $item->telepon }}</td>
                                             <td>{{ $item->user->email }}</td>
                                             <td>
-                                                <a href="{{ route('mitra.show', $item->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
-                                                <form action="{{ route('mitra.destroy', $item->id) }}" method="post" class="d-inline">
-                                                    @csrf
-                                                    @method('delete')
-                                                    <button class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="bi bi-trash-fill"></i></button>
-                                                </form>
+                                                <a href="{{ route('mitra.show', $item->id) }}" class="btn btn-primary"><i
+                                                        class="bi bi-eye-fill"></i></a>
+                                                @if (Auth::user()->role == 'admin')
+                                                    <form action="{{ route('mitra.destroy', $item->id) }}" method="post"
+                                                        class="d-inline">
+                                                        @csrf
+                                                        @method('delete')
+                                                        <button class="btn btn-danger"
+                                                            onclick="return confirm('Yakin ingin menghapus data ini?')"><i
+                                                                class="bi bi-trash-fill"></i></button>
+                                                    </form>
+                                                @endif
                                             </td>
                                         </tr>
                                     @endforeach

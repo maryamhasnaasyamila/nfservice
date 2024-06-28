@@ -6,12 +6,16 @@ use App\Models\Contributor;
 use App\Models\Service;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MitraController extends Controller
 {
     public function index()
     {
         $contributors = Contributor::all();
+        if (auth()->user()->role == 'user') {
+            $contributors = Contributor::where('user_id', auth()->id())->get();
+        }
         return view('dashboard.mitra.index', compact('contributors'));
     }
 
@@ -44,6 +48,9 @@ class MitraController extends Controller
 
     public function destroy(string $id)
     {
+        if (Auth::user()->role == 'user') {
+            return redirect()->route('mitra.index');
+        }
         $contributor = Contributor::findOrFail($id);
         User::where('id', $contributor->user_id)->delete();
         $contributor->delete();

@@ -1,76 +1,25 @@
 <?php
 
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
-// Controller untuk Dashbaord Admin & Mitra
-use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TokoController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\FormsController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MitraController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\LayananController;
-use App\Http\Controllers\AllLayananController;
-use App\Http\Controllers\MitraController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AllRekapController;
-use App\Http\Controllers\RekapOrderController;
-use App\Http\Controllers\FormsController;
-
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-
-use App\Http\Controllers\FormElektronikController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\RekapOrderController;
 use App\Http\Controllers\FormOtomotifController;
-
-use App\Http\Controllers\ServiceElektronikController;
-use App\Http\Controllers\ServiceOtomotifController;
-
-use App\Http\Controllers\TokoController;
 use App\Http\Controllers\DetailServiceController;
-
-
-
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// ROOT untuk Dashbaord
-Route::get(
-    '/dashboard-page',
-    [DashboardController::class, 'index']
-);
-
-Route::get(
-    '/dashboard-page/profil',
-    [ProfilController::class, 'index']
-);
-
-Route::resource(
-    '/dashboard-page/services',
-    LayananController::class
-);
-
-Route::resource(
-    '/dashboard-page/mitra',
-    MitraController::class
-);
-
-Route::resource(
-    '/dashboard-page/orders',
-    AllRekapController::class
-);
-
-Route::get(
-    '/dashboard-page/mitra-recap',
-    [RekapOrderController::class, 'index']
-);
-
-Route::get(
-    '/dashboard-page/service/form-layanan',
-    [FormsController::class, 'index']
-);
-
-
+use App\Http\Controllers\FormElektronikController;
+use App\Http\Controllers\ServiceOtomotifController;
+use App\Http\Controllers\ServiceElektronikController;
+use App\Http\Controllers\VerificationController;
 
 // ROOT untuk Home
 Route::get(
@@ -133,3 +82,49 @@ Route::get(
     '/service-otomotif',
     [ServiceOtomotifController::class, 'index']
 );
+
+Route::get('/verify/{hash}', [VerificationController::class, 'showVerificationForm'])->name('verification.form');
+Route::post('/verify/{hash}', [VerificationController::class, 'verify'])->name('verification');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    // ROOT untuk Dashbaord
+    Route::get(
+        '/dashboard-page',
+        [DashboardController::class, 'index']
+    )->name('dashboard');
+
+    Route::get(
+        '/dashboard-page/profil',
+        [ProfilController::class, 'index']
+    );
+
+    Route::resource(
+        '/dashboard-page/services',
+        LayananController::class
+    );
+
+    Route::resource(
+        '/dashboard-page/mitra',
+        MitraController::class
+    );
+
+    Route::resource(
+        '/dashboard-page/orders',
+        AllRekapController::class
+    );
+
+    Route::get(
+        '/dashboard-page/mitra-recap',
+        [RekapOrderController::class, 'index']
+    );
+
+    Route::get(
+        '/dashboard-page/service/form-layanan',
+        [FormsController::class, 'index']
+    );
+});
+
+require __DIR__ . '/auth.php';
