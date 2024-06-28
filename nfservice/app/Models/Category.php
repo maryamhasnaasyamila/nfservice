@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contributor extends Model
+class Category extends Model
 {
     use HasFactory;
 
     protected $guarded = ['id'];
 
-    public function services()
+    public function subCategories()
     {
-        $this->hasMany(Service::class);
+        return $this->hasMany(SubCategory::class);
     }
-    
 }

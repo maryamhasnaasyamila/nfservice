@@ -5,15 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contributor extends Model
+class Service extends Model
 {
     use HasFactory;
 
     protected $guarded = ['id'];
 
-    public function services()
+    public function contributor()
     {
-        $this->hasMany(Service::class);
+        $this->belongsTo(Contributor::class);
     }
-    
+
+    public function order()
+    {
+        return $this->hasOne(Order::class);
+    }
 }
