@@ -63,7 +63,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-                                                                                                                                                            justify-content: center;">
+                                                                                                                                                                                                                                                                                                                                                                                            justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -74,100 +74,117 @@
             </div>
             </div>
         </section>
-        <!-- /About Section -->
-        <hr> <br>
+        <!-- /About Section --> 
+        <section id="" class="filter section light-background">
+            <div class="filter-container">
+                <select class="filter-elektronik" name="" id="">
+                    <option class="option-filter" value="Jenis Elektronik" disabled>Jenis Elektronik</option>
+                    <option class="option-filter" value="Laptop">Handphone</option>
+                    <option class="option-filter" value="Laptop">Laptop</option>
+                </select>
 
-        <section id="filter" class="filter section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="filter-container">
-                            <h3>Kategori Elektronik</h3>
-                            <div class="filter-item d-flex">
-                                <button class="btn-category-elektronik">Handphone</button>
-                                <button class="btn-category-elektronik">Laptop</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="filter-container">
-                            <h3>Batas Harga</h3>
-                            <div class="filter-item d-flex">
-                                <input type="number" name="min-price" id="min-price" class="input-price">
-                                <span> - </span>
-                                <input type="number" name="max-price" id="max-price" class="input-price">
-                                <button class="btn-price">submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <select class="filter-otomotif" name="" id="">
+                    <option class="option-filter" value="Jenis Otomotif" disabled>Jenis Otomotif</option>
+                    <option class="option-filter" value="Motor">Motor</option>
+                    <option class="option-filter" value="Mobil">Mobil</option>
+                </select>
+                <form action="#" class="form-search" data-aos="fade-up" data-aos-delay="200">
+                    <input type="text" class="form-control" placeholder="Cari layanan atau lokasi..">
+                    <button type="submit" class="btn btn-info">Search</button>
+                </form>
             </div>
         </section>
-        <br>
-        <hr>
         <!-- Faq Section -->
         <section id="faq" class="faq section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
+
                         <div class="faq-container">
-                            <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                                <img src="" alt="gambar-service">
-                                {{-- <i class="faq-icon bi bi-question-circle"></i> --}}
-                                <h3>Nama Service</h3>
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="flex-service-list">
+                                    <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
+                                        alt="gambar-service">
+                                    <div class="detail-service-list">
+                                        <h3>Nama Service</h3>
+                                        <div class="btn-tags-service">
+                                            <a href="" class="btn btn-sm tag1">#Tags 1</a>
+                                            <a href="" class="btn btn-sm tag2">#Tags 2</a>
+                                            <a href="" class="btn btn-sm tag3">#Tags 3</a>
+                                            <a href="" class="btn btn-sm tag4">#Tags 4</a>
+                                            <a href="" class="btn btn-sm tag5">#Tags 5</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="faq-content">
                                     <p>Alamat lengkap lokasi service</p>
                                     <p>Rp. (Harga service)</p>
-                                    <div class="btn-view-service">
-                                        <button class="btn-lihat-toko">View Profil</button>
-                                        <button class="btn-lihat-detail">Video Detail</button>
-                                    </div>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                                <img src="" alt="gambar-service">
-
-                                {{-- <i class="faq-icon bi bi-question-circle"></i> --}}
-                                <h3>Nama Service</h3>
+                                <div class="flex-service-list">
+                                    <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
+                                        alt="gambar-service">
+                                    <div class="detail-service-list">
+                                        <h3>Nama Service</h3>
+                                        <div class="btn-tags-service">
+                                            <a href="" class="btn btn-sm tag1">#Tags 1</a>
+                                            <a href="" class="btn btn-sm tag2">#Tags 2</a>
+                                            <a href="" class="btn btn-sm tag3">#Tags 3</a>
+                                            <a href="" class="btn btn-sm tag4">#Tags 4</a>
+                                            <a href="" class="btn btn-sm tag5">#Tags 5</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="faq-content">
                                     <p>Alamat lengkap lokasi service</p>
                                     <p>Rp. (Harga service)</p>
-                                    <div class="btn-view-service">
-                                        <button class="btn-lihat-toko">View Profil</button>
-                                        <button class="btn-lihat-detail">Video Detail</button>
-                                    </div>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Nama Service</h3>
+                                <div class="flex-service-list">
+                                    <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
+                                        alt="gambar-service">
+                                    <div class="detail-service-list">
+                                        <h3>Nama Service</h3>
+                                        <div class="btn-tags-service">
+                                            <a href="" class="btn btn-sm">#Tags 1</a>
+                                            <a href="" class="btn btn-sm">#Tags 2</a>
+                                            <a href="" class="btn btn-sm">#Tags 3</a>
+                                            <a href="" class="btn btn-sm">#Tags 4</a>
+                                            <a href="" class="btn btn-sm">#Tags 5</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="faq-content">
                                     <p>Alamat lengkap lokasi service</p>
                                     <p>Rp. (Harga service)</p>
-                                    <div class="btn-view-service">
-                                        <button class="btn-lihat-toko">View Profil</button>
-                                        <button class="btn-lihat-detail">Video Detail</button>
-                                    </div>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                                <img src="" alt="gambar-service">
-                                {{-- <i class="faq-icon bi bi-question-circle"></i> --}}
-                                <h3>Nama Service</h3>
+                                <div class="flex-service-list">
+                                    <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
+                                        alt="gambar-service">
+                                    <div class="detail-service-list">
+                                        <h3>Nama Service</h3>
+                                        <div class="btn-tags-service">
+                                            <a href="" class="btn btn-sm">#Tags 1</a>
+                                            <a href="" class="btn btn-sm">#Tags 2</a>
+                                            <a href="" class="btn btn-sm">#Tags 3</a>
+                                            <a href="" class="btn btn-sm">#Tags 4</a>
+                                            <a href="" class="btn btn-sm">#Tags 5</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="faq-content">
                                     <p>Alamat lengkap lokasi service</p>
                                     <p>Rp. (Harga service)</p>
-                                    <div class="btn-view-service">
-                                        <button class="btn-lihat-toko">View Profil</button>
-                                        <button class="btn-lihat-detail">Video Detail</button>
-                                    </div>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
