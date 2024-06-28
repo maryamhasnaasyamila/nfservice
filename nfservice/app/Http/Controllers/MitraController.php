@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contributor;
 use App\Models\Service;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class MitraController extends Controller
@@ -44,6 +45,7 @@ class MitraController extends Controller
     public function destroy(string $id)
     {
         $contributor = Contributor::findOrFail($id);
+        User::where('id', $contributor->user_id)->delete();
         $contributor->delete();
         return redirect()->route('mitra.index');
     }

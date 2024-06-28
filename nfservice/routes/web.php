@@ -45,9 +45,9 @@ Route::get(
     [ProfilController::class, 'index']
 );
 
-Route::get(
-    '/dashboard-page/service',
-    [LayananController::class, 'index']
+Route::resource(
+    '/dashboard-page/services',
+    LayananController::class
 );
 
 Route::resource(
@@ -55,14 +55,9 @@ Route::resource(
     MitraController::class
 );
 
-Route::get(
-    '/dashboard-page/services',
-    [AllLayananController::class, 'index']
-);
-
-Route::get(
-    '/dashboard-page/admin-recap',
-    [AllRekapController::class, 'index']
+Route::resource(
+    '/dashboard-page/orders',
+    AllRekapController::class
 );
 
 Route::get(

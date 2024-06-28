@@ -125,32 +125,17 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="{{ url('/dashboard-page/services') }}">
-                    <i class="bi bi-journal-text"></i><span>Daftar Layanan (All)</span>
+                    <i class="bi bi-journal-text"></i><span>Layanan</span>
                 </a>
             </li>
             <!-- End Forms Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ url('/dashboard-page/service') }}">
-                    <i class="bi bi-journal-text"></i><span>Daftar Layanan</span>
-                </a>
-            </li>
-            <!-- End Forms Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ url('/dashboard-page/admin-recap') }}">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Rekap Order (All)</span>
+                <a class="nav-link collapsed" href="{{ url('/dashboard-page/orders') }}">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Order</span>
                 </a>
             </li>
             <!-- End Tables Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ url('/dashboard-page/mitra-recap') }}">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Rekap Order</span>
-                </a>
-            </li>
-            <!-- End Tables Nav -->
-
             <!-- End Profile Page Nav -->
         </ul>
     </aside>

@@ -35,9 +35,9 @@
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $item->title }}</td>
-                                            <td>Rp <?= number_format($item->harga, 0, ',', '.');?></td>
-                                            <td>{{ $item->status == 1 ? "aktif" : "non aktif" }}</td>
-                                            <td>{{ $item->terjual }}</td>
+                                            <td>Rp <?= number_format($item->harga, 0, ',', '.') ?></td>
+                                            <td>{{ $item->status == 1 ? 'aktif' : 'non aktif' }}</td>
+                                            <td>{{ App\Models\Order::where('service_id', $item->id)->count() }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

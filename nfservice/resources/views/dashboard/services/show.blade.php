@@ -2,11 +2,12 @@
 @section('content')
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1>Semua Layanan</h1>
+            <h1>Penjualan Layanan {{ $service->titles }}</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Semua Layanan</li>
+                    <li class="breadcrumb-item"><a href="index.html">Semua Layanan</a></li>
+                    <li class="breadcrumb-item active">Penjualan Layanan {{ $service->titles }}</li>
                 </ol>
             </nav>
         </div>
@@ -34,19 +35,32 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($services as $item)
+                                    @foreach ($service->orders as $item)
                                         <tr>
-                                            <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $item->title }}</td>
-                                            <td>{{ $item->deskripsi }}</td>
-                                            <td>{{ $item->category->nama }}</td>
-                                            <td>Rp<?= number_format($item->harga, 0, ',', '.'); ?></td>
-                                            <td>{{ $item->contributor->nama  ?? '-'}}</td>
-                                            <td>{{ $item->contributor->telepon?? '-' }}</td>
+                                           <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $item->created_at }}</td>
+                                            <td>{{ $item->firsname . " " . $item->lastname }}</td>
+                                            <td>{{ $item->telepon }}</td>
+                                            <td>{{ $item->alamat }}</td>
+                                            <td>{{ $item->service->title }}</td>
+                                            <td>{{ $item->jenis == "0" ? "Call Service" : "Self Service" }}</td>
                                             <td>
-                                                <a href="{{ route('services.show', $item->id) }}"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye-fill"></i></a>
-                                                <form action="{{ route('services.destroy', $item->id) }}" method="post"
+                                                @php
+                                                    if ($item->status == 0) {
+                                                        echo "menunggu konfirmasi";
+                                                    } elseif ($item->status == 1) {
+                                                        echo "dikonfirmasi";
+                                                    } elseif ($item->status == 2) {
+                                                        echo "sedang dikerjakan";
+                                                    } elseif ($item->status == 3) {
+                                                        echo "selesai";
+                                                    } elseif ($item->status == 4) {
+                                                        echo "dibatalkan";
+                                                    }
+                                                @endphp
+                                            </td>
+                                            <td>
+                                                <form action="{{ route('orders.destroy', $item->id) }}" method="post"
                                                     class="d-inline">
                                                     @csrf
                                                     @method('delete')
