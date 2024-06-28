@@ -15,5 +15,15 @@ class Contributor extends Model
     {
         $this->hasMany(Service::class);
     }
+
+    public function getAvatarAttribute()
+    {
+        return 'https://ui-avatars.com/api/?name=' . $this->nama . '&color=7F9CF5&background=EBF4FF';
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
     
 }

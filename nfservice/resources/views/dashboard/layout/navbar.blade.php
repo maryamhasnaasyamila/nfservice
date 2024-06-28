@@ -118,6 +118,12 @@
             <!-- End Dashboard Nav -->
 
             <li class="nav-item">
+                <a class="nav-link collapsed" href="{{ url('/dashboard-page/mitra') }}">
+                    <i class="bi bi-person"></i>
+                    <span>Mitra</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="{{ url('/dashboard-page/services') }}">
                     <i class="bi bi-journal-text"></i><span>Daftar Layanan (All)</span>
                 </a>
@@ -145,12 +151,6 @@
             </li>
             <!-- End Tables Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ url('/dashboard-page/mitra') }}">
-                    <i class="bi bi-person"></i>
-                    <span>Daftar Mitra</span>
-                </a>
-            </li>
             <!-- End Profile Page Nav -->
         </ul>
     </aside>

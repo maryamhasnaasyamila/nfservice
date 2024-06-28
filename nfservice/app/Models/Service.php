@@ -20,4 +20,10 @@ class Service extends Model
     {
         return $this->hasOne(Order::class);
     }
+
+    public function terjual()
+    {
+        $terjual = $this->order()->where('status', 'success')->count();
+        return $terjual;
+    }
 }

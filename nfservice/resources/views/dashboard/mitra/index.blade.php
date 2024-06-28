@@ -17,6 +17,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
+                            <a href="{{ route('mitra.create') }}" class="btn btn-primary my-4 btn-sm">Tambah Mitra</a>
                             <!-- Table with stripped rows -->
                             <table class="table datatable">
                                 <thead>
@@ -31,36 +32,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Konter Koko</td>
-                                        <td>Muhammad Kevin</td>
-                                        <td>
-                                            Jl. RTM No.4, Tugu, Cimanggis, Depok, Jawa Barat 16451
-                                        </td>
-                                        <td>08123456789</td>
-                                        <td>kokokevin@gmail.com</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash3-fill"></i>
-                                            </button>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Honda Service</td>
-                                        <td>Haikal Mahendra</td>
-                                        <td>
-                                            Jl. RTM No.35, Tugu, Cimanggis, Depok, Jawa Barat 16451
-                                        </td>
-                                        <td>08198765432</td>
-                                        <td>hondaservice@gmail.com</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash3-fill"></i>
-                                            </button>
-
-                                        </td>
-                                    </tr>
+                                    @foreach ($contributors as $item)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $item->nama }}</td>
+                                            <td>{{ $item->user->name }}</td>
+                                            <td>{{ $item->alamat }}</td>
+                                            <td>{{ $item->telepon }}</td>
+                                            <td>{{ $item->user->email }}</td>
+                                            <td>
+                                                <a href="{{ route('mitra.show', $item->id) }}" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                                <form action="{{ route('mitra.destroy', $item->id) }}" method="post" class="d-inline">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="bi bi-trash-fill"></i></button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

@@ -50,9 +50,9 @@ Route::get(
     [LayananController::class, 'index']
 );
 
-Route::get(
+Route::resource(
     '/dashboard-page/mitra',
-    [MitraController::class, 'index']
+    MitraController::class
 );
 
 Route::get(

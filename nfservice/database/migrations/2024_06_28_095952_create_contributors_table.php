@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->string('telepon')->unique();
-            $table->string('email')->unique();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
             $table->timestamps();
         });
     }

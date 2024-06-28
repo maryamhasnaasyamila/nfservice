@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('contributor_id');
             $table->foreign('contributor_id')->references('id')->on('contributors');
             $table->string('slug');
-            $table->string('status');
+            $table->boolean('status');
             $table->unsignedBigInteger('sub_category_id');
             $table->foreign('sub_category_id')->references('id')->on('sub_categories');
             $table->timestamps();
