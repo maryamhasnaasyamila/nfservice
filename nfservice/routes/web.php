@@ -123,7 +123,7 @@ Route::get(
 
 // ROOT untuk DETAIL SERVICE
 Route::get(
-    '/home-page/detail-service',
+    '/home-page/detail',
     [DetailServiceController::class, 'index']
 );
 

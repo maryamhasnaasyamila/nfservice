@@ -74,7 +74,7 @@
             </div>
             </div>
         </section>
-        <!-- /About Section --> 
+        <!-- /About Section -->
         <section id="" class="filter section light-background">
             <div class="filter-container">
                 <select class="filter-elektronik" name="" id="">
@@ -106,13 +106,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <h3>Nama Service</h3>
+                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
                                         <div class="btn-tags-service">
-                                            <a href="" class="btn btn-sm tag1">#Tags 1</a>
-                                            <a href="" class="btn btn-sm tag2">#Tags 2</a>
-                                            <a href="" class="btn btn-sm tag3">#Tags 3</a>
-                                            <a href="" class="btn btn-sm tag4">#Tags 4</a>
-                                            <a href="" class="btn btn-sm tag5">#Tags 5</a>
+                                            <a href="" class="btn btn-sm tag1">Laptop</a>
                                         </div>
                                     </div>
                                 </div>
@@ -128,13 +124,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <h3>Nama Service</h3>
+                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
                                         <div class="btn-tags-service">
-                                            <a href="" class="btn btn-sm tag1">#Tags 1</a>
-                                            <a href="" class="btn btn-sm tag2">#Tags 2</a>
-                                            <a href="" class="btn btn-sm tag3">#Tags 3</a>
-                                            <a href="" class="btn btn-sm tag4">#Tags 4</a>
-                                            <a href="" class="btn btn-sm tag5">#Tags 5</a>
+                                            <a href="" class="btn btn-sm tag1">Laptop</a>
                                         </div>
                                     </div>
                                 </div>
@@ -150,13 +142,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <h3>Nama Service</h3>
+                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
                                         <div class="btn-tags-service">
-                                            <a href="" class="btn btn-sm">#Tags 1</a>
-                                            <a href="" class="btn btn-sm">#Tags 2</a>
-                                            <a href="" class="btn btn-sm">#Tags 3</a>
-                                            <a href="" class="btn btn-sm">#Tags 4</a>
-                                            <a href="" class="btn btn-sm">#Tags 5</a>
+                                            <a href="" class="btn btn-sm">Laptop</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,13 +160,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <h3>Nama Service</h3>
+                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
                                         <div class="btn-tags-service">
-                                            <a href="" class="btn btn-sm">#Tags 1</a>
-                                            <a href="" class="btn btn-sm">#Tags 2</a>
-                                            <a href="" class="btn btn-sm">#Tags 3</a>
-                                            <a href="" class="btn btn-sm">#Tags 4</a>
-                                            <a href="" class="btn btn-sm">#Tags 5</a>
+                                            <a href="" class="btn btn-sm">Laptop</a>
                                         </div>
                                     </div>
                                 </div>

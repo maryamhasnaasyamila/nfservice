@@ -2661,7 +2661,7 @@ iframe {
 # CSS untuk Detail Service
 */
 
-/* .img-fluid {
+.img-fluid-detail {
     border-radius: 10px;
     width: 75%;
 }
@@ -2718,7 +2718,7 @@ iframe {
 .provider-section .logo {
     flex: 1;
     margin-top: 2rem;
-    margin-left: 8rem;
+    margin-left: 5rem;
 }
 .provider-section .logo img {
     max-width: 200px;
@@ -2726,46 +2726,50 @@ iframe {
 }
 
 .provider-section .provider-info {
-    flex: 2;
+    flex: 3;
     text-align: left;
+    align-items: center;
 }
 .provider-section .provider-info h1 {
     color: #6096b4;
-    margin: 1rem 0;
+    margin: 1rem 0 0 1rem;
     text-align: left;
 }
 
-.btn-categories {
-    margin: 1rem 0 1rem 0;
+/* .btn-categories {
+    margin: 1rem 0 1rem -1rem;
     display: flex;
     justify-content: left;
-}
+} */
+
+
 
 .category-tags {
     background-color: #d9d9d9;
     border-radius: 5px;
     border-color: transparent;
-    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    /* margin: 0.5rem 0.5rem 0.5rem -2rem; */
 }
 
 .provider-section .provider-info p {
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 0rem 1rem;
     text-align: left;
 }
 
 .provider-section .view-profile {
     flex: 1;
-    text-align: left;
+    text-align: center;
+    margin-right: 1rem;
 }
 
-.provider-section .view-profile button {
+.provider-section .view-profile a {
     background-color: #6096b4;
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 0.7rem 2rem;
+    padding: 0.8rem 1.5rem;
     cursor: pointer;
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 0rem 0;
 }
 
 .provider-section .view-profile button:hover {
@@ -2823,7 +2827,7 @@ iframe {
         margin: 2rem 0 0.5rem 1rem;
     }
 
-    .img-fluid {
+    .img-fluid-detail {
         width: 90%;
     }
 
@@ -2838,7 +2842,7 @@ iframe {
         max-width: 100%;
         margin-top: 20px;
     }
-} */
+}
 
 /*
 # CSS untuk PROFIL TOKO
@@ -2859,7 +2863,7 @@ iframe {
 }
 
 .toko-section .logo {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-left: 0rem;
 }
 
@@ -2873,11 +2877,11 @@ iframe {
     text-align: left;
 }
 
-.category-tags {
+.category-tags-profil {
     background-color: #d9d9d9;
     border-radius: 5px;
     border-color: transparent;
-    margin: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0rem 1rem 0.5rem 0rem;
 }
 
 .toko-section .btn-view-profile {
@@ -2897,7 +2901,8 @@ iframe {
     text-align: center;
 }
 
-.btn-categories {
+.btn-categories-profil {
+    display: flex;
     margin: 1rem 0 1rem 0;
     justify-content: center;
 }
@@ -2933,7 +2938,6 @@ iframe {
     width: 15%;
     border-radius: 5px;
 }
-
 
 .filter-container {
     display: flex;
@@ -2989,13 +2993,13 @@ iframe {
     font-style: italic;
     background-color: #6097b461;
     margin-right: 0.5rem;
-    border-radius: 35%;
-    font-size: 12px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 @media (max-width: 768px) {
     .form-search {
-        margin: 1rem 2rem 2rem 2rem;
+        margin: 0rem 2rem 0rem 2rem;
     }
 }
 

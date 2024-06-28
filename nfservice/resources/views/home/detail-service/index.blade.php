@@ -35,15 +35,15 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="{{ asset('/home/assets/img/img_h_6.jpg') }}" alt="Image"
-                                        class="img-fluid" />
+                                        class="img-fluid-detail" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('/home/assets/img/img_h_7.jpg') }}" alt="Image"
-                                        class="img-fluid" />
+                                        class="img-fluid-detail" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('/home/assets/img/img_h_8.jpg') }}" alt="Image"
-                                        class="img-fluid" />
+                                        class="img-fluid-detail" />
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -73,14 +73,16 @@
             <div class="provider-info">
                 <h1>Nama Toko</h1>
                 <div class="btn-categories">
-                    <button class="category-tags">Tag 1</button>
-                    <button class="category-tags">Tag 2</button>
-                    <button class="category-tags">Tag 3</button>
+                    <button class="category-tags">Keyword 1</button>
+                    <button class="category-tags">Keyword 2</button>
+                    <button class="category-tags">Keyword 3</button>
+                    <button class="category-tags">Keyword 4</button>
+                    <button class="category-tags">Keyword 5</button>
                 </div>
                 <p>Alamat lengkap lokasi service</p>
             </div>
             <div class="view-profile">
-                <button>View Profile</button>
+                <a href="{{ url('/home-page/toko') }}">View Profile</a>
             </div>
         </div>
 

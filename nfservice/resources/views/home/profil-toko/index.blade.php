@@ -12,18 +12,17 @@
                     </div>
                     <div class="toko-info">
                         <h1>Nama Toko</h1>
-                        <div class="btn-categories">
-                            <button class="category-tags">Tag 1</button>
-                            <button class="category-tags">Tag 2</button>
-                            <button class="category-tags">Tag 3</button>
+                        <div class="btn-categories-profil">
+                            <button class="category-tags-profil">Tag 1</button>
+                            <button class="category-tags-profil">Tag 2</button>
+                            <button class="category-tags-profil">Tag 3</button>
+                            <button class="category-tags-profil">Tag 4</button>
+                            <button class="category-tags-profil">Tag 5</button>
                         </div>
                         <p class="alamat-toko">(Alamat lengkap lokasi service). Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Quia a
                             pariatur reiciendis molestias corrupti officia possimus nostrum eum ut in quam tempore vitae,
                             ipsum aspernatur! Qui odit velit quo sequi?</p>
-                    </div>
-                    <div class="btn-view-profile">
-                        <button>View Profile</button>
                     </div>
                 </div>
             </div>
