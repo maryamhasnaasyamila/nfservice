@@ -44,7 +44,11 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                 justify-content: center;">
+=======
+                                                                                                                                                                                                        justify-content: center;">
+>>>>>>> origin/main
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -69,7 +73,11 @@
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                 mollit anim id est laborum.</p>
-                            <a class="cta-btn" href="#">Cari Service</a>
+                            <form action="{{ url('services') }}" method="get">
+                                <input type="hidden" name="type" value="harga">
+                                <input type="text" name="keyword" class="form-control" required>
+                                <button class="cta-btn">Cari Service</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -84,11 +92,21 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon flex-shrink-0">
-                            <i class="bi bi-laptop"></i>
+                    @foreach ($categories as $item)
+                        <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon flex-shrink-0">
+                                <i class="{{ $item->icon }}"></i>
 
+                            </div>
+                            <div>
+                                <h4 class="title">Kategori {{ $item->nama }}</h4>
+                                <p class="description">{{ $item->deskripsi }}</p>
+                                <a href="{{ route('services.show', $item->slug) }}"
+                                    class="readmore stretched-link"><span>Show
+                                        All</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
+<<<<<<< HEAD
                         <div>
                             <h4 class="title">Kategori Elektronik</h4>
                             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
@@ -112,6 +130,10 @@
                                     All</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div><!-- End Service Item -->
+=======
+                        <!-- End Service Item -->
+                    @endforeach
+>>>>>>> origin/main
                 </div>
 
             </div>
@@ -128,12 +150,17 @@
             <div class="container">
 
                 <div class="row gy-4">
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-1.jpg') }}" alt="" class="img-fluid">
+                    @foreach ($services as $item)
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="{{ $item->thumbnail ?? asset('/home/assets/img/service-1.jpg') }}" alt=""
+                                        class="img-fluid">
+                                </div>
+                                <h3>{{ $item->title }}</h3>
+                                <p>{{ $item->deskripsi }}</p>
                             </div>
+<<<<<<< HEAD
                             <h3>Nama Service</h3>
                             <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
                             <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See more..</a>
@@ -202,6 +229,10 @@
                                     more..</a>
                         </div>
                     </div><!-- End Card Item -->
+=======
+                        </div><!-- End Card Item -->
+                    @endforeach
+>>>>>>> origin/main
 
                 </div>
 

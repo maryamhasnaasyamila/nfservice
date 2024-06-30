@@ -67,6 +67,7 @@ Route::get(
 use App\Http\Controllers\FormElektronikController;
 use App\Http\Controllers\ServiceOtomotifController;
 use App\Http\Controllers\ServiceElektronikController;
+use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\VerificationController;
 
 // ROOT untuk Home
@@ -119,20 +120,16 @@ Route::get(
     [DetailServiceController::class, 'index']
 );
 
+Route::get('services', [ServicesController::class, 'index'])->name('services.index');
+Route::get('services/{slug}', [ServicesController::class, 'show'])->name('services.show');
+Route::get('services/{slug}/detail', [ServicesController::class, 'detail'])->name('services.detail');
+
 // ROOT untuk SERVICE ELEKTRONIK
-Route::get(
-    '/service-elektronik',
-    [ServiceElektronikController::class, 'index']
-);
 
-// ROOT untuk SERVICE OTOMOTIF
-Route::get(
-    '/service-otomotif',
-    [ServiceOtomotifController::class, 'index']
-);
-
-Route::get('/verify/{hash}', [VerificationController::class, 'showVerificationForm'])->name('verification.form');
+Route::get('/verifverificationy/{hash}', [VerificationController::class, 'showVerificationForm'])->name('verification.form');
 Route::post('/verify/{hash}', [VerificationController::class, 'verify'])->name('verification');
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
