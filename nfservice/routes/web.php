@@ -16,11 +16,64 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RekapOrderController;
 use App\Http\Controllers\FormOtomotifController;
 use App\Http\Controllers\DetailServiceController;
+<<<<<<< HEAD
+
+
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// ROOT untuk Dashboard
+Route::get(
+    '/dashboard-page',
+    [DashboardController::class, 'index']
+);
+
+Route::get(
+    '/dashboard-page/profil',
+    [ProfilController::class, 'index']
+);
+
+Route::get(
+    '/dashboard-page/service',
+    [LayananController::class, 'index']
+);
+
+Route::resource(
+    '/dashboard-page/mitra',
+    MitraController::class
+);
+
+Route::get(
+    '/dashboard-page/services',
+    [AllLayananController::class, 'index']
+);
+
+Route::get(
+    '/dashboard-page/admin-recap',
+    [AllRekapController::class, 'index']
+);
+
+Route::get(
+    '/dashboard-page/mitra-recap',
+    [RekapOrderController::class, 'index']
+);
+
+Route::get(
+    '/dashboard-page/service/form-layanan',
+    [FormsController::class, 'index']
+);
+
+
+=======
 use App\Http\Controllers\FormElektronikController;
 use App\Http\Controllers\ServiceOtomotifController;
 use App\Http\Controllers\ServiceElektronikController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\VerificationController;
+>>>>>>> a489dd05b84d24f5ea25fc9bf20ee2c4073cdee1
 
 // ROOT untuk Home
 Route::get(
