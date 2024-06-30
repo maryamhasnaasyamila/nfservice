@@ -34,7 +34,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ROOT untuk Dashbaord
+// ROOT untuk Dashboard
 Route::get(
     '/dashboard-page',
     [DashboardController::class, 'index']
