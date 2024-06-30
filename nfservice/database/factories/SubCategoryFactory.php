@@ -20,6 +20,7 @@ class SubCategoryFactory extends Factory
             'nama' => $this->faker->word(),
             'slug' => $this->faker->slug(),
             'category_id' => $this->faker->numberBetween(1, 2),
+            'icon' => $this->faker->imageUrl(180, 80, 'SUB_CATEGORIES', true),
         ];
     }
 }

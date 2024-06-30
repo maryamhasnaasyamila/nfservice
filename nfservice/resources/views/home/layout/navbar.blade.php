@@ -18,13 +18,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet" />
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-square-buttons/1.0.0/bootstrap-square-buttons.min.css"
+        integrity="sha512-Dzi0zz9zCe2olZNhq+wnzGjO5ILOv8f/yD6j8srW+XGnnv9dUN04eEoIdVHxQqiy8uBn21niIWQpiCzYJEH3yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     <link href="{{ asset('/home/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('/home/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
     <link href="{{ asset('/home/assets/vendor/aos/aos.css') }}" rel="stylesheet" />
     <link href="{{ asset('/home/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('/home/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/52b41e6465.js" crossorigin="anonymous"></script>
 
@@ -43,12 +48,13 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li class="navlink-style">
-                        <a href="{{ url('/home-page') }}">Home</a>
+                        <a href="{{ url('/') }}">Home</a>
                     </li>
-                    <li class="navlink-style"><a href="{{ url('/home-page#services') }}">Services</a></li>
-                    <li class="navlink-style"><a href="{{ url('/home-page/about-us') }}">About</a></li>
+                    <li class="navlink-style"><a href="{{ url('/services') }}">Services</a></li>
+                    <li class="navlink-style"><a href="{{ url('/about-us') }}">About</a></li>
                     <li class="navlink-style">
-                        <a href="{{ url('/home-page/login')}}"><i style="font-size: 2rem" class="bi bi-person-circle"></i>
+                        <a href="{{ url('/login') }}"><i style="font-size: 2rem"
+                                class="bi bi-person-circle"></i>
                         </a>
                     </li>
                 </ul>

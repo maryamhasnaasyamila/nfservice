@@ -15,11 +15,15 @@ class CategorySeeder extends Seeder
     {
         Category::create([
             'name' => "Elektronik",
-            'slug' => "elektronik"
+            'slug' => "elektronik",
+            'icon' => "bi bi-laptop",
+            'deskripsi' => "Berbagai hal berkaitan dengan elektronik, anda dapat mencari service tersebut melalui klik dibawah ini"
         ]);
         Category::create([
             'name' => "Otomotif",
-            'slug' => "otomotif"
+            'slug' => "otomotif",
+            'icon' => 'bi bi-car-front-fill',
+            'deskripsi' => "Berbagai hal berkaitan dengan otomotif, anda dapat mencari service tersebut melalui klik dibawah ini"
         ]);
     }
 }
