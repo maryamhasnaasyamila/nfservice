@@ -2,11 +2,11 @@
 @section('content')
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1>Daftar Semua Layanan</h1>
+            <h1>Semua Layanan</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Daftar Semua Layanan</li>
+                    <li class="breadcrumb-item active">Semua Layanan</li>
                 </ol>
             </nav>
         </div>
@@ -24,7 +24,6 @@
 
                                     <tr>
                                         <th>No</th>
-                                        <th>Timestamp</th>
                                         <th>Layanan</th>
                                         <th>Deskripsi</th>
                                         <th>Kategori</th>
@@ -34,57 +33,30 @@
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2023-06-20T10:20:30.456Z</td>
-                                        <td>Service Laptop Baterai Bocor</td>
-                                        <td>Menanangi permasalahan baterai bocor pada semua jenis laptop. Pengerjaan bisa
-                                            ditunggu!</td>
-                                        <td>Self Service</td>
-                                        <td>Rp. 600.000</td>
-                                        <td>Konter Koko</td>
-                                        <td>088765434</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash3-fill"></i>
-                                            </button>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>2</td>
-                                        <td>2023-07-20T10:19:30.456Z</td>
-                                        <td>Service Ban Motor Bocor</td>
-                                        <td>Layanan siaga 24 jam, atasi kebocoran dimanapun Anda berada.</td>
-                                        <td>Call Service & Self Service</td>
-                                        <td>Rp. 200.000</td>
-                                        <td>Honda Service</td>
-                                        <td>081234568</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash3-fill"></i>
-                                            </button>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>3</td>
-                                        <td>2024-07-20T10:19:30.456Z</td>
-                                        <td>Service LCD HP</td>
-                                        <td>Sedia jasa servis LCD HP untuk semua tipe handphone.</td>
-                                        <td>Self Service</td>
-                                        <td>Rp. 800.000</td>
-                                        <td>Konter Koko</td>
-                                        <td>088987654</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-danger"><i class="bi bi-trash3-fill"></i>
-                                            </button>
-
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                    @foreach ($services as $item)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $item->title }}</td>
+                                            <td>{{ $item->deskripsi }}</td>
+                                            <td>{{ $item->category->nama }}</td>
+                                            <td>Rp<?= number_format($item->harga, 0, ',', '.'); ?></td>
+                                            <td>{{ $item->contributor->nama  ?? '-'}}</td>
+                                            <td>{{ $item->contributor->telepon?? '-' }}</td>
+                                            <td>
+                                                <a href="{{ route('services.show', $item->id) }}"
+                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye-fill"></i></a>
+                                                <form action="{{ route('services.destroy', $item->id) }}" method="post"
+                                                    class="d-inline">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button class="btn btn-danger btn-sm"
+                                                        onclick="return confirm('Yakin ingin menghapus data ini?')"><i
+                                                            class="bi bi-trash-fill"></i></button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                             </table>
                             <!-- End Table with stripped rows -->
                         </div>

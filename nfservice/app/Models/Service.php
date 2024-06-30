@@ -13,17 +13,16 @@ class Service extends Model
 
     public function contributor()
     {
-        $this->belongsTo(Contributor::class);
+        return $this->belongsTo(Contributor::class);
     }
 
-    public function order()
+    public function orders()
     {
-        return $this->hasOne(Order::class);
+        return $this->hasMany(Order::class);
     }
 
-    public function terjual()
+    public function category()
     {
-        $terjual = $this->order()->where('status', 'success')->count();
-        return $terjual;
+        return $this->belongsTo(SubCategory::class, 'sub_category_id');
     }
 }
