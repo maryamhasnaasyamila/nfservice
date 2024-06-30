@@ -44,11 +44,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-<<<<<<< HEAD
-                                                                                                                                                                                                                                                                                justify-content: center;">
-=======
                                                                                                                                                                                                         justify-content: center;">
->>>>>>> origin/main
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -106,34 +102,8 @@
                                         All</span><i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <div>
-                            <h4 class="title">Kategori Elektronik</h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                excepturi sint occaecati cupiditate non provident</p>
-                            <a href="{{ url('/service-elektronik') }}" class="readmore stretched-link"><span>Show
-                                    All</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- End Service Item -->
-
-                    <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon flex-shrink-0">
-                            <i class="bi bi-car-front-fill"></i>
-
-                        </div>
-                        <div>
-                            <h4 class="title">Kategori Otomotif</h4>
-                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat tarad limino ata</p>
-                            <a href="{{ url('/service-otomotif') }}" class="readmore stretched-link"><span>Show
-                                    All</span><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div><!-- End Service Item -->
-=======
                         <!-- End Service Item -->
                     @endforeach
->>>>>>> origin/main
                 </div>
 
             </div>
@@ -160,79 +130,8 @@
                                 <h3>{{ $item->title }}</h3>
                                 <p>{{ $item->deskripsi }}</p>
                             </div>
-<<<<<<< HEAD
-                            <h3>Nama Service</h3>
-                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
-                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See more..</a>
-                            </p>
-                        </div>
-                    </div><!-- End Card Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-2.jpg') }}" alt="" class="img-fluid">
-                            </div>
-                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
-                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See more..</a>
-                        </div>
-                    </div><!-- End Card Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-3.jpg') }}" alt="" class="img-fluid">
-                            </div>
-                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
-                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
-                                    more..</a>
-                        </div>
-                    </div><!-- End Card Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-4.jpg') }}" alt=""
-                                    class="img-fluid">
-                            </div>
-                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
-                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
-                                    more..</a>
-                        </div>
-                    </div><!-- End Card Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-5.jpg') }}" alt=""
-                                    class="img-fluid">
-                            </div>
-                            <h3>Nama Service</h3>
-                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
-                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
-                                    more..</a>
-                        </div>
-                    </div><!-- End Card Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-6.jpg') }}" alt=""
-                                    class="img-fluid">
-                            </div>
-                            <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
-                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
-                                    more..</a>
-                        </div>
-                    </div><!-- End Card Item -->
-=======
                         </div><!-- End Card Item -->
                     @endforeach
->>>>>>> origin/main
 
                 </div>
 

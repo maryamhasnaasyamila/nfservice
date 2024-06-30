@@ -48,14 +48,6 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li class="navlink-style">
-<<<<<<< HEAD
-                        <a href="{{ url('') }}">Home</a>
-                    </li>
-                    <li class="navlink-style"><a href="{{ url('#services') }}">Services</a></li>
-                    <li class="navlink-style"><a href="{{ url('/about-us') }}">About</a></li>
-                    <li class="navlink-style">
-                        <a href="{{ url('/login') }}"><i style="font-size: 2rem" class="bi bi-person-circle"></i>
-=======
                         <a href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="navlink-style"><a href="{{ url('/services') }}">Services</a></li>
@@ -63,7 +55,6 @@
                     <li class="navlink-style">
                         <a href="{{ url('/login') }}"><i style="font-size: 2rem"
                                 class="bi bi-person-circle"></i>
->>>>>>> origin/main
                         </a>
                     </li>
                 </ul>

@@ -57,8 +57,8 @@
                             {{ $service->deskripsi }}
                         </p>
                         <div class="btn-hero-detail">
-                            <button class="action-hero" id="kontak">Contact Provider</button>
-                            <button class="action-hero" id="booking">Booking Service</button>
+                            <a href="tel:{{ $service->contributor->telepon }}" class="action-hero" id="kontak">Contact Provider</a>
+                            <a href="{{ url('form', $service->slug) }}" class="action-hero" id="booking">Booking Service</a>
                         </div>
                     </div>
                 </div>

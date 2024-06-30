@@ -48,8 +48,12 @@ Route::get(
 );
 
 Route::get(
-    '/form-otomotif',
+    '/form/{slug}',
     [FormOtomotifController::class, 'index']
+);
+Route::post(
+    '/form/{slug}',
+    [FormOtomotifController::class, 'store']
 );
 
 
