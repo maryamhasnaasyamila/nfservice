@@ -9,7 +9,7 @@
                         <h1 class="page-title-heading">Layanan Service Elektronik</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="custom-breadcrumb breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{ url('/home-page') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ url('') }}">Home</a></li>
                                 <li class="breadcrumb-item active current" aria-current="page">
                                     Service Elektronik
                                 </li>
@@ -63,7 +63,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-                                                                                                                                                                                                                                                                                                                                                                                            justify-content: center;">
+                                                                                                                                                                                                                                                                                                                                                                                                        justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -106,7 +106,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
+                                        <a href="{{ url('/detail') }}">
+                                            <h3>Nama Service</h3>
+                                        </a>
                                         <div class="btn-tags-service">
                                             <a href="" class="btn btn-sm tag1">Laptop</a>
                                         </div>
@@ -124,7 +126,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
+                                        <a href="{{ url('/detail') }}">
+                                            <h3>Nama Service</h3>
+                                        </a>
                                         <div class="btn-tags-service">
                                             <a href="" class="btn btn-sm tag1">Laptop</a>
                                         </div>
@@ -142,7 +146,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
+                                        <a href="{{ url('/detail') }}">
+                                            <h3>Nama Service</h3>
+                                        </a>
                                         <div class="btn-tags-service">
                                             <a href="" class="btn btn-sm">Laptop</a>
                                         </div>
@@ -160,7 +166,9 @@
                                     <img src="{{ asset('/home/assets/img/service-baterai.jpg') }}" class="img-pp-service"
                                         alt="gambar-service">
                                     <div class="detail-service-list">
-                                        <a href="{{ url('/home-page/detail')}}"><h3>Nama Service</h3></a>
+                                        <a href="{{ url('/detail') }}">
+                                            <h3>Nama Service</h3>
+                                        </a>
                                         <div class="btn-tags-service">
                                             <a href="" class="btn btn-sm">Laptop</a>
                                         </div>

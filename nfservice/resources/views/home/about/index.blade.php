@@ -96,7 +96,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/zidan.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -108,7 +108,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-4.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/hasna2.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -120,7 +120,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/anang.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -132,7 +132,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-4.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/mila.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -144,7 +144,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/wafi.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -156,7 +156,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-4.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/hisyam.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -170,7 +170,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/alvi.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">
@@ -182,7 +182,7 @@
                             <div class="swiper-slide">
                                 <div class="team">
                                     <div class="pic">
-                                        <img src="{{ url('/home/assets/img/team/team-1.jpg') }}" alt="Image"
+                                        <img src="{{ url('/home/assets/img/risqi.jpg') }}" alt="Image"
                                             class="img-fluid" />
                                     </div>
                                     <h3 clas="">

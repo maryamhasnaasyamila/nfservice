@@ -600,6 +600,7 @@ section,
     font-size: 15px;
     font-weight: normal;
     color: var(--default-color);
+    text-align: justify;
 }
 
 /* --------------------------------------------------------------
@@ -2741,8 +2742,6 @@ iframe {
     display: flex;
     justify-content: left;
 } */
-
-
 
 .category-tags {
     background-color: #d9d9d9;

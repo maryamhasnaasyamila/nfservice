@@ -44,7 +44,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-                                                                                                                                                                                                justify-content: center;">
+                                                                                                                                                                                                                                                                                justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -93,7 +93,7 @@
                             <h4 class="title">Kategori Elektronik</h4>
                             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
                                 excepturi sint occaecati cupiditate non provident</p>
-                            <a href="{{ url('/home-page/service-elektronik') }}" class="readmore stretched-link"><span>Show
+                            <a href="{{ url('/service-elektronik') }}" class="readmore stretched-link"><span>Show
                                     All</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                             <h4 class="title">Kategori Otomotif</h4>
                             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                                 ex ea commodo consequat tarad limino ata</p>
-                            <a href="{{ url('/home-page/service-elektronik') }}" class="readmore stretched-link"><span>Show
+                            <a href="{{ url('/service-otomotif') }}" class="readmore stretched-link"><span>Show
                                     All</span><i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div><!-- End Service Item -->
@@ -135,7 +135,9 @@
                                 <img src="{{ asset('/home/assets/img/service-1.jpg') }}" alt="" class="img-fluid">
                             </div>
                             <h3>Nama Service</h3>
-                            <p>Deskripsi Service</p>
+                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
+                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See more..</a>
+                            </p>
                         </div>
                     </div><!-- End Card Item -->
 
@@ -145,7 +147,8 @@
                                 <img src="{{ asset('/home/assets/img/service-2.jpg') }}" alt="" class="img-fluid">
                             </div>
                             <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p>Deskripsi Service</p>
+                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
+                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See more..</a>
                         </div>
                     </div><!-- End Card Item -->
 
@@ -155,17 +158,22 @@
                                 <img src="{{ asset('/home/assets/img/service-3.jpg') }}" alt="" class="img-fluid">
                             </div>
                             <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p>Deskripsi Service</p>
+                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
+                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
+                                    more..</a>
                         </div>
                     </div><!-- End Card Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="card">
                             <div class="card-img">
-                                <img src="{{ asset('/home/assets/img/service-4.jpg') }}" alt="" class="img-fluid">
+                                <img src="{{ asset('/home/assets/img/service-4.jpg') }}" alt=""
+                                    class="img-fluid">
                             </div>
                             <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p>Deskripsi Service</p>
+                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
+                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
+                                    more..</a>
                         </div>
                     </div><!-- End Card Item -->
 
@@ -176,7 +184,9 @@
                                     class="img-fluid">
                             </div>
                             <h3>Nama Service</h3>
-                            <p>Deskripsi Service</p>
+                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
+                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
+                                    more..</a>
                         </div>
                     </div><!-- End Card Item -->
 
@@ -187,7 +197,9 @@
                                     class="img-fluid">
                             </div>
                             <h3><a href="#" class="stretched-link">Nama Service</a></h3>
-                            <p>Deskripsi Service</p>
+                            <p style="margin-bottom:0.5rem">(Rp.Harga Service)</p>
+                            <p><a style="color: blue; margin-top:0" href="{{ url('/service-elektronik') }}">See
+                                    more..</a>
                         </div>
                     </div><!-- End Card Item -->
 

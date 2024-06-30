@@ -35,7 +35,7 @@
 <body class="index-page">
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-            <a href="{{ url('/home-page') }}" class="logo d-flex align-items-center">
+            <a href="{{ url('') }}" class="logo d-flex align-items-center">
                 <img src="{{ asset('/home/assets/img/logo2.png') }}" alt="" />
                 <!-- <h1 class="sitename">NF Service</h1> -->
             </a>
@@ -43,12 +43,12 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li class="navlink-style">
-                        <a href="{{ url('/home-page') }}">Home</a>
+                        <a href="{{ url('') }}">Home</a>
                     </li>
-                    <li class="navlink-style"><a href="{{ url('/home-page#services') }}">Services</a></li>
-                    <li class="navlink-style"><a href="{{ url('/home-page/about-us') }}">About</a></li>
+                    <li class="navlink-style"><a href="{{ url('#services') }}">Services</a></li>
+                    <li class="navlink-style"><a href="{{ url('/about-us') }}">About</a></li>
                     <li class="navlink-style">
-                        <a href="{{ url('/home-page/login')}}"><i style="font-size: 2rem" class="bi bi-person-circle"></i>
+                        <a href="{{ url('/login') }}"><i style="font-size: 2rem" class="bi bi-person-circle"></i>
                         </a>
                     </li>
                 </ul>

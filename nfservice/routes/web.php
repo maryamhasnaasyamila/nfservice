@@ -16,10 +16,6 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RekapOrderController;
 use App\Http\Controllers\FormOtomotifController;
 use App\Http\Controllers\DetailServiceController;
-<<<<<<< HEAD
-
-
-
 
 Route::get('/', function () {
     return view('welcome');
@@ -67,12 +63,11 @@ Route::get(
 );
 
 
-=======
+
 use App\Http\Controllers\FormElektronikController;
 use App\Http\Controllers\ServiceOtomotifController;
 use App\Http\Controllers\ServiceElektronikController;
 use App\Http\Controllers\VerificationController;
->>>>>>> a489dd05b84d24f5ea25fc9bf20ee2c4073cdee1
 
 // ROOT untuk Home
 Route::get(

@@ -27,9 +27,6 @@ use App\Http\Controllers\ServiceOtomotifController;
 use App\Http\Controllers\TokoController;
 use App\Http\Controllers\DetailServiceController;
 
-
-
-
 Route::get('/', function () {
     return view('welcome');
 });
