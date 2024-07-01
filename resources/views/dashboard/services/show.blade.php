@@ -2,12 +2,12 @@
 @section('content')
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1>Penjualan Layanan {{ $service->titles }}</h1>
+            <h1>Penjualan Layanan {{ $service->title }}</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                     <li class="breadcrumb-item"><a href="index.html">Semua Layanan</a></li>
-                    <li class="breadcrumb-item active">Penjualan Layanan {{ $service->titles }}</li>
+                    <li class="breadcrumb-item active">Penjualan Layanan {{ $service->title }}</li>
                 </ol>
             </nav>
         </div>

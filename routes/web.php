@@ -77,7 +77,7 @@ Route::get(
 );
 
 Route::get('services', [ServicesController::class, 'index'])->name('services.index');
-Route::get('services/{slug}', [ServicesController::class, 'show'])->name('services.show');
+Route::get('services/{slug}', [ServicesController::class, 'show'])->name('home.services.show');
 Route::get('services/{slug}/detail', [ServicesController::class, 'detail'])->name('services.detail');
 
 // ROOT untuk SERVICE ELEKTRONIK

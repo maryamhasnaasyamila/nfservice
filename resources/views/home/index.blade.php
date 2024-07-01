@@ -44,7 +44,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-                                                                                                                                                                                                        justify-content: center;">
+                                                                                                                                                                                                            justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -70,9 +70,9 @@
                                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                 mollit anim id est laborum.</p>
                             <form action="{{ url('services') }}" method="get">
-                                <input type="hidden" name="type" value="harga">
-                                <input type="text" name="keyword" class="form-control" required>
-                                <button class="cta-btn">Cari Service</button>
+                                <input type="hidden" name="type" placeholder="masukan keyword" value="harga" required>
+                                <input type="text" name="keyword" class="form-control" placeholder="masukan keyword" required>
+                                <button class="btn btn-primary mt-3">Cari Service</button>
                             </form>
                         </div>
                     </div>
@@ -95,9 +95,9 @@
 
                             </div>
                             <div>
-                                <h4 class="title">Kategori {{ $item->nama }}</h4>
+                                <h4 class="title">Kategori {{ $item->name }}</h4>
                                 <p class="description">{{ $item->deskripsi }}</p>
-                                <a href="{{ route('services.show', $item->slug) }}"
+                                <a href="{{ route('home.services.show', $item->slug) }}"
                                     class="readmore stretched-link"><span>Show
                                         All</span><i class="bi bi-arrow-right"></i></a>
                             </div>
@@ -123,12 +123,14 @@
                     @foreach ($services as $item)
                         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                             <div class="card">
-                                <div class="card-img">
-                                    <img src="{{ $item->thumbnail ?? asset('/home/assets/img/service-1.jpg') }}" alt=""
-                                        class="img-fluid">
-                                </div>
-                                <h3>{{ $item->title }}</h3>
-                                <p>{{ $item->deskripsi }}</p>
+                                <a href="{{ route('services.detail', $item->slug) }}">
+                                    <div class="card-img">
+                                        <img src="{{ $item->thumbnail ?? asset('/home/assets/img/service-1.jpg') }}"
+                                            alt="" class="img-fluid">
+                                    </div>
+                                    <h3>{{ $item->title }}</h3>
+                                    <p>Rp. <?= number_format($item->harga, 0, ',', '.') ?></p>
+                                </a>
                             </div>
                         </div><!-- End Card Item -->
                     @endforeach
@@ -139,4 +141,7 @@
 
         </section><!-- /Services Section -->
     </main>
+    @session('success')
+        <script>alert('pesanan berhasil di tambahkan!')</script>
+    @endsession
 @endsection

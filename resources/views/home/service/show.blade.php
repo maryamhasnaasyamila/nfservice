@@ -5,7 +5,7 @@
         <section id="about" class="about section">
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h1 class="title-service">Daftar Service</h1> <br>
+                <h1 class="title-service">Daftar Service {{ $category->name }}</h1> <br>
             </div><!-- End Section Title -->
             <div class="container">
                 <div class="row">
@@ -48,7 +48,7 @@
                             </div>
                             <div
                                 class="swiper-slide"style="display: flex;
-                                                                                                                                                                            justify-content: center;">
+                                                                                                                                                                                justify-content: center;">
                                 <img src="{{ asset('home/assets/img/image-1.png') }}" alt="Image" class="img-fluid"
                                     style="width: 80%; height: auto; border-radius: 10px" />
                             </div>
@@ -69,9 +69,9 @@
                         <div class="filter-container" style="display:flex;flex-direction:column">
                             <h3>Kategori</h3>
                             <div class="row" style="flex-direction: row"> <br>
-                                @foreach ($categories as $item)
+                                @foreach ($category->subCategories as $item)
                                     <div class="col-md-6">
-                                        <a href="{{ route('home.services.show', $item->slug) }}">{{ $item->name }}</a>
+                                        <a href="">{{ $item->nama }}</a>
                                     </div>
                                 @endforeach
                             </div>
@@ -84,7 +84,8 @@
                             <form>
                                 <div class="filter-item d-flex">
                                     <input type="hidden" name="type" value="harga">
-                                    <input type="text" name="keyword" value="{{ request()->keyword }}" class="form-control" placeholder="keyword" required>
+                                    <input type="text" name="keyword" value="{{ request()->keyword }}"
+                                        class="form-control" placeholder="keyword" required>
                                     <input type="number" class="form-control" name="min_price" id="min_price"
                                         class="input_price" placeholder="min price" value="{{ request()->min_price }}" required>
                                     <span> - </span>
@@ -124,6 +125,7 @@
                                     <i class="faq-toggle bi bi-chevron-right"></i>
                                 </div><!-- End Faq item-->
                             @endforeach
+                            
                         </div>
                     </div>
                 </div>

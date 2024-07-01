@@ -13,7 +13,7 @@ class FormOtomotifController extends Controller
     public function index(string $slug)
     {
         $service = Service::where('slug', $slug)->first();
-        return view('home.form-otomotif.index', compact('service')) ;
+        return view('home.form-otomotif.index', compact('service'));
     }
 
     public function store(Request $request, string $slug)
@@ -32,7 +32,65 @@ class FormOtomotifController extends Controller
         ]);
 
         Order::create($request->all());
-        FacadesAlert::success('Success', 'Data berhasil disimpan');
+        $data = [
+            'api_key' => 'mMqH4MwRHJpLS0H4LyekrebMYIjuqv',
+            'sender' => '6287790002941',
+            'number' => "$request->telepon",
+            'message' => "Pesanan anda berhasil dibuat silahkan tunggu beberapa saat untuk di konfirmasi oleh teknisi!"
+        ];
+        // dd($data);/
+        $urlendpoint = "https://wa.alwafisysdev.my.id/send-message";
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $urlendpoint,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode($data),
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json'
+            ),
+        ));
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+
+        $telepon = $service->contributor->telepon;
+        $data2 = [
+            'api_key' => 'mMqH4MwRHJpLS0H4LyekrebMYIjuqv',
+            'sender' => '6287790002941',
+            'number' => "$telepon",
+            'message' => "Ada pesanan baru ke tempat anda nih silahkan cek aplikasi!"
+        ];
+
+        $curl = curl_init();
+        
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $urlendpoint,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode($data2),
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json'
+            ),
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+
         return redirect('/')->with('success', 'Data berhasil disimpan');
     }
 }

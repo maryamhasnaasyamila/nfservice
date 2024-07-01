@@ -34,8 +34,7 @@
               </script>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('/home/assets/img/img_h_6.jpg') }}" alt="Image"
-                                        class="img-fluid-detail" />
+                                    <img src="{{ $service->thumbnail }}" alt="Image" class="img-fluid-detail" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('/home/assets/img/img_h_7.jpg') }}" alt="Image"
@@ -57,8 +56,10 @@
                             {{ $service->deskripsi }}
                         </p>
                         <div class="btn-hero-detail">
-                            <a href="tel:{{ $service->contributor->telepon }}" class="action-hero" id="kontak">Contact Provider</a>
-                            <a href="{{ url('form', $service->slug) }}" class="action-hero" id="booking">Booking Service</a>
+                            <a href="tel:{{ $service->contributor->telepon }}" class="action-hero" id="kontak">Contact
+                                Provider</a>
+                            <a href="{{ url('form', $service->slug) }}" class="action-hero" id="booking">Booking
+                                Service</a>
                         </div>
                     </div>
                 </div>
@@ -90,10 +91,8 @@
 
         <div class="map-section">
             <h1 style="margin-bottom: 2rem; color: #6096b4">Lokasi Service</h1>
-            <iframe
-                src="{{ $service->contributor->link_map }}"
-                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+            <iframe src="{{ $service->contributor->link_map }}" width="600" height="450" style="border: 0"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
         </div>
     </main>
 @endsection

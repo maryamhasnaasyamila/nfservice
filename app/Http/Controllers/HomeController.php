@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $services = Service::all();
+        $services = Service::limit(6)->get();
         return view('home.index', compact('categories', 'services'));
     }
 }

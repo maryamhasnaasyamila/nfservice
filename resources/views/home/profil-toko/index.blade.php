@@ -23,9 +23,9 @@
 
                         <div class="map-section">
                             <h1 style="margin-bottom: 2rem; color: #6096b4">Lokasi Service</h1>
-                            <iframe src="{{ $contributor->link_map }}" width="600" height="450" style="border: 0"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                frameborder="0"></iframe>
+                            <iframe src="{{ $contributor->link_map }}" width="600" height="450"
+                                style="border: 0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -37,13 +37,14 @@
                     @foreach ($contributor->services as $item)
                         <div class="col-sm-6 col-md-6 mb-4 mb-lg-0 col-lg-4 rekomendasi-box">
                             <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
-                                <a href="{{ route('services.detail', $item->slug) }}" class="thumb d-block"><img src="{{ $item->thumbnail }}"
-                                        alt="Image" class="img-fluid rounded" />
+                                <a href="{{ route('services.detail', $item->slug) }}" class="thumb d-block"><img
+                                        src="{{ $item->thumbnail }}" alt="Image" class="img-fluid rounded" />
                                 </a>
 
                                 <div class="post-content">
                                     <div class="meta">
-                                        <a href="{{ route('services.detail', $item->slug) }}" class="cat">{{ $item->title }}</a> •
+                                        <a href="{{ route('services.detail', $item->slug) }}"
+                                            class="cat">{{ $item->title }}</a> •
                                         <span class="date">{{ $item->category->nama }}</span>
                                     </div>
                                     <h3>

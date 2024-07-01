@@ -8,6 +8,6 @@ class ServiceOtomotifController extends Controller
 {
     public function index()
     {
-        return view('home.service-otomotif.index');
+        return view('home.service-elektronik.index');
     }
 }
